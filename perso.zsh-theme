@@ -225,5 +225,6 @@ build_prompt() {
   prompt_hg
   prompt_end
 }
-PROMPT='%{%f%b%k%}$(build_prompt)
+PROMPT='
+%{%f%b%k%}$(build_prompt)
 ╰─ '
