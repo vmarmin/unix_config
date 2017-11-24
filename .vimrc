@@ -78,12 +78,13 @@ let g:maplocalleader = ","
 "nnoremap <Esc> :w<CR><Esc>
 "supprimer surlignage recherche et trailing white space sur echap
 "nnoremap <Esc> :nohl<CR>:w<CR><Esc>
-nnoremap <Tab> :nohl<CR><Esc>
+"nnoremap <Tab> :nohl<CR><Esc>
 
 nnoremap Q <nop>
 
 " --- mapping recherche sur la barre espace
-map <space> /
+"map <space> /
+map <leader>f /
 
 " --- map 0 on ^ to go to first non-blank character of the line
 map 0 ^
@@ -106,7 +107,7 @@ set list
 " undo backup swap directory
 set undodir=~/.vim/.undo//
 set backupdir=~/.vim/.backups//
-set directory=~/.vim/.swap//
+set directory=~/.vim/.swaps//
 
 set signcolumn=yes
 
@@ -115,8 +116,8 @@ set pumheight=30
 
 noremap <Left> :bp<CR>
 noremap <Right> :bn<CR>
-noremap <Down> :bd<CR>
-noremap <Up> :Ex<CR>
+"noremap <Down> :bd<CR>
+"noremap <Up> :Ex<CR>
 
 set tags=./tags
 
@@ -156,7 +157,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-scripts/AutoComplPop'
+Plugin 'vim-scripts/AutoComplPop'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
@@ -174,6 +175,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/SearchComplete'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'benmills/vimux'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Plugins for C/C++
 Plugin 'vim-scripts/a.vim'
@@ -229,17 +231,18 @@ let g:load_doxygen_syntax=1
 
 let g:NERDTreeWinPos = "left"
 
+" bufexplorer
 map <S-Tab> :BufExplorerHorizontalSplit<CR>
 
+" airline
 let g:airline#extensions#tabline#enabled=1
-"let g:airline_left_sep=''
-"let g:airline_right_sep=''
-"let g:airline_section_z=''
-"let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_powerline_fonts = 1
 
+" tagbar
 let g:tagbar_left = 0
 
+" vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_experimental_template_highlight = 1
@@ -255,18 +258,27 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_python_checkers = ['pylint']
+"let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = []
 
 " Rainbow Parentheses
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+"au VimEnter * RainbowParenthesesToggle
+"au Syntax * RainbowParenthesesLoadRound
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
 
 "python-mode
 let g:pymode_rope_goto_definition_bind = "<C-]>" " Override go-to.definition key shortcut to Ctrl-]
 let g:pymode_python = 'python3'
 let g:pymode_folding = 0
+let g:pymode_doc = 0
+let g:pymode_lint = 0
+
+" vim-tmux-navigator
+"let g:tmux_navigator_save_on_switch = 2
+
+" editor-config
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 
 
@@ -359,6 +371,14 @@ function! s:headerPythonPEP8()
     execute "normal! ggO# -*- coding: utf-8 -*-"
 endfunction
 
+function! s:pythonComment()
+    execute "normal! O# TODO - N.V - "
+    let currentdate=strftime("%Y-%m-%d")
+    execute "normal! A" . currentdate
+    execute "normal! A -  "
+    execute "normal! $"
+    startreplace
+endfunction
 
 
 """"""""""""""""""""
@@ -411,30 +431,39 @@ endif
 set t_Co=256
 set background=dark
 
-colorscheme Tomorrow-Night-Bright
+"colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow-Night
 let g:airline_theme='tomorrow'
 set cursorline
 
 au BufRead,BufNewFile *.qss setfiletype css "syntax color for qt .css file
 au BufRead,BufNewFile *.qrc setfiletype xml "syntax color for qt .qrc file
 
-nnoremap <F2> :call <SID>doxy_header_h()<CR>
-nnoremap <F3> :call <SID>header_c()<CR>
-nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <F5> :TagbarToggle<CR>
-nnoremap <F6> :%s/\s\+$//e<CR>:w<CR>
-nnoremap <F7> :call UpdateTags()<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <F3> :TagbarToggle<CR>
+nnoremap <F4> :nohl<CR>
+nnoremap <F5> :%s/\s\+$//e<CR>:w<CR>
+
+""""""""" if C++ """"""""""
+"nnoremap <F6> :call <SID>doxy_header_h()<CR>
+"nnoremap <F7> :call <SID>header_c()<CR>
+"nnoremap <F8> :call UpdateTags()<CR>
+""""""""" if Python """"""""""
+nnoremap <F6> :call <SID>headerPythonPEP8()<CR>
+""""""""""""""""""""""""""""""
 
 nnoremap <leader>t :tag <c-r><c-w><cr>
 nnoremap <leader>py :call <SID>headerPythonPEP8()<CR>
+nnoremap <leader>pyc :call <SID>pythonComment()<CR>
 nnoremap <Leader>do :Dox<CR>
 nnoremap <Leader>dov :call <SID>includeVarDoxygenComment()<CR>
 nnoremap <Leader>del :call <SID>deleteVarUnderCursor()<CR>
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vs :VimuxInterruptRunner<CR>
 
 inoremap print print("[NVS] ")<Esc>hi
+inoremap pprint print("[NVS]")<Esc>opprint()<Esc>i
 
 " to work in terminal
 au VimEnter * IndentLinesToggle
-
