@@ -36,6 +36,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
+let python_highlight_all=1
+
 " indent 4 spaces
 set softtabstop=4
 set shiftwidth=4
@@ -83,8 +85,8 @@ let g:maplocalleader = ","
 nnoremap Q <nop>
 
 " --- mapping recherche sur la barre espace
-"map <space> /
-map <leader>f /
+map <space> /
+"map <leader>f /
 
 " --- map 0 on ^ to go to first non-blank character of the line
 map 0 ^
@@ -114,22 +116,16 @@ set signcolumn=yes
 " limit popup menu height
 set pumheight=30
 
-noremap <Left> :bp<CR>
 noremap <Right> :bn<CR>
-"noremap <Down> :bd<CR>
-"noremap <Up> :Ex<CR>
+noremap <Left> :bp<CR>
+"noremap <Left> :vertical resize -1<CR>
+"noremap <Right> :vertical resize +1<CR>
+"noremap <Down> :resize -1<CR>
+"noremap <Up> :resize +1<CR>
 
+ " ctags -R --python-kinds=-i --fields=+iaS --language-force=python -f mw_tags ~/01_Workspace/mw_dev_tools/work/sources
 set tags=./tags
-
-
-" source specific files
-"so ~/.vim/.plugins_vimrc
-"so ~/.vim/.functions_vimrc
-"if has("gui_running")
-    "so ~/.vim/.gui_vimrc
-"endif
-
-
+set tags+=~/00_Tools/working_tags/mw_tags
 
 """"""""""""""""""""
 """"" PLUGINS """"""
@@ -171,11 +167,13 @@ Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-surround'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'
-Plugin 'vim-syntastic/syntastic'
+"Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-scripts/SearchComplete'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'benmills/vimux'
 Plugin 'editorconfig/editorconfig-vim'
+"Plugin 'w0rp/ale'
+Plugin 'thiagoalessio/rainbow_levels.vim'
 
 " Plugins for C/C++
 Plugin 'vim-scripts/a.vim'
@@ -205,6 +203,7 @@ Plugin 'trevordmiller/nova-vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'arcticicestudio/nord-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -233,6 +232,7 @@ let g:NERDTreeWinPos = "left"
 
 " bufexplorer
 map <S-Tab> :BufExplorerHorizontalSplit<CR>
+"map <leader>be :BufExplorerHorizontalSplit<CR>
 
 " airline
 let g:airline#extensions#tabline#enabled=1
@@ -249,37 +249,47 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
 " syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_python_checkers = []
+let g:syntastic_python_checkers = ['pylint']
+"let g:syntastic_python_checkers = []
 
 " Rainbow Parentheses
-"au VimEnter * RainbowParenthesesToggle
-"au Syntax * RainbowParenthesesLoadRound
-"au Syntax * RainbowParenthesesLoadSquare
-"au Syntax * RainbowParenthesesLoadBraces
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 "python-mode
 let g:pymode_rope_goto_definition_bind = "<C-]>" " Override go-to.definition key shortcut to Ctrl-]
+let g:pymode_breakpoint = 1
 let g:pymode_python = 'python3'
 let g:pymode_folding = 0
 let g:pymode_doc = 0
 let g:pymode_lint = 0
 
 " vim-tmux-navigator
-"let g:tmux_navigator_save_on_switch = 2
+let g:tmux_navigator_save_on_switch = 2
 
 " editor-config
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
+" YouCompleteMe
+let g:ycm_python_binary_path='/usr/bin/python3'
+let g:ycm_autoclose_preview_window_after_completion=1
+
+" ALE
+let g:ale_completion_enabled = 1
+let g:ale_sign_column_always = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_set_highlights = 0
 
 
 """"""""""""""""""""
@@ -380,6 +390,17 @@ function! s:pythonComment()
     startreplace
 endfunction
 
+function! s:pyDebug()
+  execute "normal! O### tempo"
+  execute "normal! omy_file = open('/home/developer/98_Tmp/pydebug.txt', 'w')"
+  execute "normal! omy_file.write(str(result))"
+  execute "normal! omy_file.close()"
+endfunction
+
+function! s:jsonFormat()
+  execute ":%s/'/\"/g | w | :%!python -m json.tool"
+endfunction
+
 
 """"""""""""""""""""
 """"""" GUI """"""""
@@ -429,15 +450,18 @@ endif
 " colors and functions
 """"""""""""""""""""""
 set t_Co=256
+"set termguicolors
 set background=dark
 
-"colorscheme Tomorrow-Night-Bright
 colorscheme Tomorrow-Night
 let g:airline_theme='tomorrow'
+"colorscheme nord
+"let g:airline_theme='nord'
 set cursorline
 
 au BufRead,BufNewFile *.qss setfiletype css "syntax color for qt .css file
 au BufRead,BufNewFile *.qrc setfiletype xml "syntax color for qt .qrc file
+au BufRead,BufNewFile *.md setfiletype markdown.pandoc
 
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :TagbarToggle<CR>
@@ -448,22 +472,36 @@ nnoremap <F5> :%s/\s\+$//e<CR>:w<CR>
 "nnoremap <F6> :call <SID>doxy_header_h()<CR>
 "nnoremap <F7> :call <SID>header_c()<CR>
 "nnoremap <F8> :call UpdateTags()<CR>
+
 """"""""" if Python """"""""""
 nnoremap <F6> :call <SID>headerPythonPEP8()<CR>
 """"""""""""""""""""""""""""""
 
+
 nnoremap <leader>t :tag <c-r><c-w><cr>
 nnoremap <leader>py :call <SID>headerPythonPEP8()<CR>
 nnoremap <leader>pyc :call <SID>pythonComment()<CR>
+nnoremap <leader>deb :call <SID>pyDebug()<CR>
 nnoremap <Leader>do :Dox<CR>
+nnoremap <leader>js :%!python -m json.tool<CR>
+nnoremap <leader>json  :%s/'/\"/g <CR>:w<CR>:%s/None/"None"/g<CR>:%!python -m json.tool<CR>
 nnoremap <Leader>dov :call <SID>includeVarDoxygenComment()<CR>
 nnoremap <Leader>del :call <SID>deleteVarUnderCursor()<CR>
+nnoremap <leader>lev :RainbowLevelsToggle<CR>
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vs :VimuxInterruptRunner<CR>
 
-inoremap print print("[NVS] ")<Esc>hi
-inoremap pprint print("[NVS]")<Esc>opprint()<Esc>i
+"inoremap print print("[NVS] ")<Esc>hi
+"inoremap pprint print("[NVS]")<Esc>opprint()<Esc>i
 
 " to work in terminal
 au VimEnter * IndentLinesToggle
+let g:indentLine_color_gui = '#2152A5'
+let g:indentLine_char = '¦'
+
+"set splitbelow
+"set splitright
+
+"set foldmethod=indent
+"set foldlevel=99

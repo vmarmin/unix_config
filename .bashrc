@@ -120,28 +120,4 @@ fi
 ################################################################################
 #                              PERSO                                           #
 ################################################################################
-#export PS1='\n\e[0;36m [\A] \e[0;31m\u@\h \e[0;32m\w \n \e[1;33m> \e[0;37m'
-export PS1='\n\e[0;36m [\D{%d-%m-%Y %H:%M}] \e[0;31m\u@\h \e[0;32m\w \n \e[1;33m> \e[0;37m'
-
-#alias la='ls -a'
-alias ls='ls -ltr --color=auto'
-alias ll='ls -altr'
-#alias lla='ls -altr'
-
-alias tmux='tmux -2'
-# Tmux split vim like
-alias :vs='tmux split -h'
-alias :sp='tmux split -v'
-alias :q='tmux kill-pane'
-alias :new='tmux new-window'
-alias tvim='tmux new-window -n vim vim'
-
-#alias Middleware
-alias cd_mw='cd ~/01_Workspace/mw_dev_tools/'
-alias cd_mw_s='cd ~/01_Workspace/mw_dev_tools/work/sources/'
-alias cd_mw_cc='cd ~/01_Workspace/mw_dev_tools/work/sources/mw_control_center/blsi/control_center'
-alias so_mw_env='source ~/01_Workspace/mw_dev_tools/work/venv/bin/activate'
-alias run_mongo='tmux new-window -n mongoDB sudo docker run --net blsi --ip 172.18.0.10 -p 27017:27017 -v /tmp/mongodb:/data/db  mongo:3.4.4'
-alias run_cc='blsi_control_center -c blsi_config_1507105806809.json -i control_center'
-alias run_fi_api='blsi_fi_control_api -c blsi_config_1507105806809.json -i fi_control_api'
-
+export PS1='\n\e[0;31m\u@\h \e[0;32m\w \n \e[1;33m> \e[0;37m'
