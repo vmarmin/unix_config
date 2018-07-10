@@ -51,7 +51,7 @@ set autowriteall
 
 " set utf8 as standard encoding
 "set encoding=utf8
-set encoding=utf-8
+set encoding=UTF-8
 
 set history=1000 "remember last 100 command
 set undolevels=1000 "undo 150 time max
@@ -98,8 +98,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-set listchars=tab:¿\ ,eol:¬
-set list
+"set listchars=tab:¿\ ,eol:¬
+"set list
 
 " undo backup swap directory
 set undodir=~/.vim/.undo//
@@ -127,6 +127,7 @@ set tags+=~/00_Tools/working_tags/mw_tags
 "au BufRead,BufNewFile *.qrc setfiletype xml "syntax color for qt .qrc file
 "au BufRead,BufNewFile *.md setfiletype markdown.pandoc
 "au BufRead,BufNewFile *.md setfiletype text
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 au BufRead *.txt set ft=
 au BufRead *.md set ft=
@@ -148,11 +149,12 @@ Plugin 'VundleVim/Vundle.vim'
 " General plugins
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'lilydjwg/colorizer'
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-devicons'
+Plugin 'ryanoasis/vim-devicons'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 "Plugin 'vim-scripts/AutoComplPop'
@@ -177,6 +179,8 @@ Plugin 'editorconfig/editorconfig-vim'
 "Plugin 'w0rp/ale'
 "Plugin 'thiagoalessio/rainbow_levels.vim'
 "Plugin 'Townk/vim-autoclose'
+Plugin 'itchyny/calendar.vim'
+Plugin 'dkprice/vim-easygrep'
 
 " Plugins for C/C++
 "Plugin 'vim-scripts/a.vim'
@@ -252,7 +256,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
 
 " tagbar
-let g:tagbar_left = 0
+let g:tagbar_left = 1
 
 " vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
@@ -545,6 +549,7 @@ nnoremap <F6> :call <SID>headerPythonPEP8()<CR>
 nnoremap <F7> :SyntasticCheck<CR>
 """"""""""""""""""""""""""""""
 nnoremap <F8> :sp<CR><C-w>w:terminal<CR><C-w>w:q!<CR>
+nnoremap <F9> :Calendar -view=year -split=horizontal -position=below -height=12<CR>
 
 
 "nnoremap <leader>t :tag <c-r><c-w><cr>
@@ -582,6 +587,7 @@ set foldlevel=99
 set foldlevelstart=3
 set foldmethod=indent
 "set foldmethod=syntax
+hi Folded ctermfg=4
 
 " Add the virtualenv's site-packages to vim path
 if has('python')
