@@ -1,0 +1,442 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <jalvarado@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director9.mail.iad3b.rsapps.net ([172.27.255.53])
+	by backend33.mail.iad3b.rsapps.net with LMTP id MOyhD6ciSlzqJgAApu/jSQ
+	for <vmarmin@xiplink.com>; Thu, 24 Jan 2019 15:40:07 -0500
+Received: from proxy16.mail.iad3a.rsapps.net ([172.27.255.53])
+	by director9.mail.iad3b.rsapps.net with LMTP id aGJxD6ciSlxeWAAAbC0CoQ
+	; Thu, 24 Jan 2019 15:40:07 -0500
+Received: from smtp37.gate.iad3a ([172.27.255.53])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy16.mail.iad3a.rsapps.net with LMTP id AMorD6ciSlyKEgAADc5QwQ
+	; Thu, 24 Jan 2019 15:40:07 -0500
+Return-Path: <jalvarado@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: vmarmin@xiplink.com
+X-Originating-Ip: [173.203.187.98]
+Authentication-Results: smtp37.gate.iad3a.rsapps.net; iprev=pass policy.iprev="173.203.187.98"; spf=pass smtp.mailfrom="jalvarado@xiplink.com" smtp.helo="smtp98.iad3a.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: 3c0fe5f6-2018-11e9-9ef1-525400dc5f6a-1-1
+Received: from [173.203.187.98] ([173.203.187.98:39242] helo=smtp98.iad3a.emailsrvr.com)
+	by smtp37.gate.iad3a.rsapps.net (envelope-from <jalvarado@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id C5/27-13584-7A22A4C5; Thu, 24 Jan 2019 15:40:07 -0500
+Received: from smtp5.relay.iad3a.emailsrvr.com (localhost [127.0.0.1])
+	by smtp5.relay.iad3a.emailsrvr.com (SMTP Server) with ESMTP id 0927B25898
+	for <vmarmin@xiplink.com>; Thu, 24 Jan 2019 15:40:07 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1548362406;
+	bh=xzYC4AVIWHPvr3XtatdKJoo/KhbYZrVcJuTjZLijmeo=;
+	h=From:Subject:Date:To:From;
+	b=2hE3NLf1Il2K9I2dRvS9n4zgXrr96ROt0W4bBICJ+fL/ckyzLqSdcY07gO7JrdatG
+	 tqYFNcknMLRaUrLKjDPZnPA/RjrTBHxmB9iYGB6PfvqPep7ZhtSfA9MKIcUBo6MmTk
+	 Xdrk3EeRATz/HLTAbxDUJDKtENhn5oqDIxzJbHgc=
+X-Auth-ID: jalvarado@xiplink.com
+Received: by smtp5.relay.iad3a.emailsrvr.com (Authenticated sender: jalvarado-AT-xiplink.com) with ESMTPSA id 5EAD5257F1
+	for <vmarmin@xiplink.com>; Thu, 24 Jan 2019 15:40:06 -0500 (EST)
+X-Sender-Id: jalvarado@xiplink.com
+Received: from [192.168.0.13] ([UNAVAILABLE]. [189.216.96.178])
+	(using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384)
+	by 0.0.0.0:587 (trex/5.7.12);
+	Thu, 24 Jan 2019 15:40:06 -0500
+From: Jorge Alvarado <jalvarado@xiplink.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_6CE40591-952E-48AE-9193-1F3B79BFF42E"
+Mime-Version: 1.0 (Mac OS X Mail 12.2 \(3445.102.3\))
+Subject: Re: Please welcome Valentin Marmin to the engineering team
+Date: Thu, 24 Jan 2019 14:40:04 -0600
+References: <1378c90e-4a84-8f1d-2e60-cb75724bc362@xiplink.com>
+To: vmarmin@xiplink.com
+In-Reply-To: <1378c90e-4a84-8f1d-2e60-cb75724bc362@xiplink.com>
+Message-Id: <1996022F-6DF3-4132-9059-47818412EB2C@xiplink.com>
+X-Mailer: Apple Mail (2.3445.102.3)
+
+
+--Apple-Mail=_6CE40591-952E-48AE-9193-1F3B79BFF42E
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+Hi Valentin,
+
+I would like to welcome you to the XIpLink Family! I=C2=B4m a Sr Systems =
+Engineer based out of Miami and supporting mainly the Maritime market.
+
+I never had the opportunity to visit Rennes, but I studied at the INSA =
+of Lyon as part of my oversees study exchange program during my =
+Speciality in Telecommunications.
+
+I wish you all the best and a very rewarding time at Xiplink!
+
+Best Regards!!!
+
+Jorge Alvarado
+Sr. SE Americas Region, XipLink, Inc.
+eMail: jalvarado@xiplink.com | www.xiplink.com <http://www.xiplink.com/>
+Office: +1 514 848 9640 x 255 | Mobile Mexico: +52 (155)1487.9316 | =
+Mobile US: +1 (786) 678 3978 | Skype: jorgealvaradoxiplink@outlook.com
+
+
+
+
+> On Jan 21, 2019, at 5:20 PM, Karim Fodil-Lemelin =
+<kfodil-lemelin@xiplink.com> wrote:
+>=20
+> Hi Everyone,
+>=20
+> I am pleased to announce that Valentin Marmin has agreed to join our =
+team as Automation Engineer. Valentin earned his Master's degree in =
+Engineering at the National Institute of Applied Science (INSA of =
+Rennes) in Industrial Informatics. Valentin has five years of experience =
+in Software development, QA engineering and Test development. Valentin's =
+knowledge of Python and Pytest will be a nice addition to our current =
+team.
+>=20
+> Valentin will be responsible for helping us design and implement the =
+Automated Test Framework (ATF) and feed the framework with well crafted =
+and organized tests.
+>=20
+> After moving from France to Montreal for 2 weeks, Valentin braved the =
+cold Canadian winter and officially started on a bone chilling day, =
+January 21st at -34C with wind chill. Another fun fact is the 21st of =
+January is also the anniversary of Quebec's province flag that displays =
+french heritage.
+>=20
+> <dofmcdpobmldmapm.jpg>
+>=20
+> Valentin's contact information can be found below:
+>=20
+> Email: vmarmin@xiplink.com <mailto:vmarmin@xiplink.com>
+> Skype: valentin.marmin
+>=20
+> Please join me to give a warm welcome to Valentin.
+>=20
+> Best regards,
+>=20
+> --=20
+> Karim Fodil-Lemelin
+> Vice President of Engineering
+>=20
+> XipLink Inc. www.xiplink.com <http://www.xiplink.com/>
+> (514) 848-9640 x223
+> (514) 848-9644 fax
+
+
+--Apple-Mail=_6CE40591-952E-48AE-9193-1F3B79BFF42E
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="Apple-Mail=_1BC0D92B-EB50-484A-AF4B-0C80C4D506C1"
+
+
+--Apple-Mail=_1BC0D92B-EB50-484A-AF4B-0C80C4D506C1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D"">Hi =
+Valentin,<div class=3D""><br class=3D""></div><div class=3D"">I would =
+like to welcome you to the XIpLink Family! I=C2=B4m a Sr Systems =
+Engineer based out of Miami and supporting mainly the Maritime =
+market.</div><div class=3D""><br class=3D""></div><div class=3D"">I =
+never had the opportunity to visit Rennes, but I studied at the INSA of =
+Lyon as part of my oversees study exchange program during my Speciality =
+in Telecommunications.</div><div class=3D""><br class=3D""></div><div =
+class=3D"">I wish you all the best and a very rewarding time at =
+Xiplink!</div><div class=3D""><br class=3D""></div><div class=3D""><div =
+class=3D"">
+<div style=3D"color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: =
+normal; letter-spacing: normal; orphans: auto; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; widows: =
+auto; word-spacing: 0px; -webkit-text-size-adjust: auto; =
+-webkit-text-stroke-width: 0px; word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D"">Best =
+Regards!!!</div><div style=3D"color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; orphans: auto; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; =
+-webkit-text-stroke-width: 0px; word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" class=3D""><b =
+class=3D""><br class=3D""></b></div><div style=3D"color: rgb(0, 0, 0); =
+font-family: Helvetica; font-size: 12px; font-style: normal; =
+font-variant-caps: normal; font-weight: normal; letter-spacing: normal; =
+orphans: auto; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: auto; word-spacing: 0px; =
+-webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; =
+word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;" class=3D""><b class=3D"">Jorge Alvarado</b><br =
+class=3D"">Sr. SE Americas Region, XipLink, Inc.</div><div style=3D"color:=
+ rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: =
+normal; font-variant-caps: normal; font-weight: normal; letter-spacing: =
+normal; orphans: auto; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: auto; word-spacing: =
+0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; =
+word-wrap: break-word; -webkit-nbsp-mode: space; line-break: =
+after-white-space;" class=3D""><a href=3D"mailto:jalvarado@xiplink.com" =
+class=3D"">eMail:&nbsp;jalvarado@xiplink.com</a>&nbsp;|&nbsp;<a =
+href=3D"http://www.xiplink.com" class=3D"">www.xiplink.com</a></div><div =
+style=3D"color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; =
+font-style: normal; font-variant-caps: normal; font-weight: normal; =
+letter-spacing: normal; orphans: auto; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; widows: auto; =
+word-spacing: 0px; -webkit-text-size-adjust: auto; =
+-webkit-text-stroke-width: 0px; word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" =
+class=3D"">Office: +1 514 848 9640 x 255 |&nbsp;Mobile Mexico: +52 =
+(155)1487.9316 | Mobile US: +1 (786) 678 3978 | Skype: <a =
+href=3D"mailto:jorgealvaradoxiplink@outlook.com" =
+class=3D"">jorgealvaradoxiplink@outlook.com</a><br class=3D""><br =
+class=3D""></div><span style=3D"color: rgb(0, 0, 0); font-family: =
+Helvetica; font-size: 12px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; orphans: auto; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; =
+-webkit-text-stroke-width: =
+0px;"><span><span><span><span><span><span><span><span><span><br =
+class=3D"Apple-interchange-newline"><span><img apple-inline=3D"yes" =
+id=3D"521515BC-104A-4679-80F7-60FF1CF5A0B8" =
+src=3D"cid:77D84FF9-B79E-4EEF-82A2-63EEBCA1BEDD" class=3D""></span>
+=
+</span></span></span></span></span></span></span></span></span></span></di=
+v>
+<div><br class=3D""><blockquote type=3D"cite" class=3D""><div =
+class=3D"">On Jan 21, 2019, at 5:20 PM, Karim Fodil-Lemelin &lt;<a =
+href=3D"mailto:kfodil-lemelin@xiplink.com" =
+class=3D"">kfodil-lemelin@xiplink.com</a>&gt; wrote:</div><br =
+class=3D"Apple-interchange-newline"><div class=3D"">
+ =20
+
+    <meta http-equiv=3D"content-type" content=3D"text/html; =
+charset=3DUTF-8" class=3D"">
+ =20
+  <div text=3D"#000000" bgcolor=3D"#FFFFFF" class=3D""><p class=3D"">Hi =
+Everyone,</p><p class=3D"">I am pleased to announce that Valentin Marmin =
+has agreed to join
+      our team as Automation Engineer. Valentin earned his Master's
+      degree in Engineering at the National Institute of Applied Science
+      (INSA of Rennes) in Industrial Informatics. Valentin has five
+      years of experience in Software development, QA engineering and
+      Test development. Valentin's knowledge of Python and Pytest will
+      be a nice addition to our current team.</p><p class=3D"">Valentin =
+will be responsible for helping us design and implement
+      the Automated Test Framework (ATF) and feed the framework with
+      well crafted and organized tests.</p><p class=3D""> After moving =
+from France to Montreal for 2 weeks, Valentin
+      braved the cold Canadian winter and officially started on a bone
+      chilling day, January 21st at -34C with wind chill. Another fun
+      fact is the 21st of January is also the anniversary of Quebec's
+      province flag that displays french heritage.<br class=3D"">
+    </p><p class=3D""><span =
+id=3D"cid:part1.6F2098DC.A072C6A4@xiplink.com">&lt;dofmcdpobmldmapm.jpg&gt=
+;</span></p><p class=3D""> Valentin's contact information can be found =
+below:</p><p class=3D"">Email: <a class=3D"moz-txt-link-abbreviated" =
+href=3D"mailto:vmarmin@xiplink.com">vmarmin@xiplink.com</a></p><p =
+class=3D"">Skype: valentin.marmin<br class=3D"">
+    </p><p class=3D"">Please join me to give a warm welcome to =
+Valentin.</p><p class=3D"">Best regards,<br class=3D"">
+    </p>
+    <pre class=3D"moz-signature" cols=3D"72">--=20
+Karim Fodil-Lemelin
+Vice President of Engineering
+
+XipLink Inc. <a class=3D"moz-txt-link-abbreviated" =
+href=3D"http://www.xiplink.com/">www.xiplink.com</a>
+(514) 848-9640 x223
+(514) 848-9644 fax</pre>
+  </div>
+
+</div></blockquote></div><br class=3D""></div></body></html>=
+
+--Apple-Mail=_1BC0D92B-EB50-484A-AF4B-0C80C4D506C1
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+	filename=PastedGraphic-3.tiff
+Content-Type: image/tiff;
+	x-unix-mode=0666;
+	name="PastedGraphic-3.tiff"
+Content-Id: <77D84FF9-B79E-4EEF-82A2-63EEBCA1BEDD>
+
+TU0AKgAAHgaAACBQOCQWDAIBgQBhkTDACCkfk0DjMnGMAAkGhF9tNeKiNrtVv1xNJjv98PR4waVS
+uWS2XS+YTGXAICAYBBoTjECikfEwDDMmmMAggHA99NFdKZ+NNcqp+uNqsp/vmUTKrVesVmtVuuV2
+vV+wWGxWOyWWzWeCAQTDkkAcfF45AQPi8dgADAoFAB+vyBP9/wKEwJ/P1/v11N9qvpkqxNPplrBN
+gB+Pl8WjLVmdj4mgYel24h0WDe7AkE3p932B4EAP5+P5/YdqvlkKpLPpmLJQZJ9ZXL73fb/gcHhc
+PicXfwgCAchmU/AcgGM7AICgYDv9+acAP9/TIA4ACAAAwgAPtqL5ZPZXIM0P96O1z8aygPpggjGp
+CW4unAAfIC7q+r+mAAu6/bvvAAbxmkXZYHuV5BjMf56ngdb4QpCsLQvDEMw0s8BKGIo0vuIo0D08
+Z9L67azruvRvGWYp7FMPAtH8eJ0nFDaYpqA4ECaOxJgOHIrDK/zsxQsoAgM0p9muYRdnsUo6ioqZ
+7HlG8qytK8sSzLSsoezQFi6R5Xr7A7tODI4EMkb5oGTF47iwfx4HOcEsgKA7SCcPBKAMG4pjE8Z8
+oHADgSQAB8l4TJEHwXJKDzLdHUfSFI0kywApqBAFDITBeAIEQZrqfdAQqA00H6cJpGZJ03H8d5ym
+7DAAgLS4ECgPRLgMGooC9P9AuM8LspOeB6EqLobH8dpxm3SdlWXZlm0mAYPhgHoGDKTJegAATpOz
+QUL1ivRyGqZ57lKO4rn6dpxWS4YAgOBQGgSKQ/E4AoYiUK1dtRV9RgAe5ZkYO58mEURFWdguDYPh
+DiR3HoDh4LQ2SHLFvH8cxsGkepSjsK5/HWcBsMuoYGAeBIqEAUACheI4oAAfR7yzWE0H0aRdFgex
+SDqKT/4TneeZ7nyZAcPxfnjkIHW3SFvH6c5tGpJw642w5rLEoYGggBIrEEUQDBaIgmn/ltH0qA00
+mcYh6E2Mwhr0fkTZ/t237hg4GjyXBzgEBoJgxo9Jzq1Z0m8bEnDsLB+nQbZoq0AIEgcCQFCuQhSA
+IFYgiTlmXUlsTJG8Zph7PtLVn67G49H0nSywBAiDQQQDxEPuI2Xvp/HYcRvTaLJ+nIaxlJeAIFAe
+CYFCwQxTIeHojZY3ll5hlhnFoVR7FQPQr9N6nq+tCwBpwGYFjQT5h0qArSr8mLVMHnUKuS1dWHDm
+3B9wahkIIAIFgiC3gkMU4ChQHYha/5KFzVD9H6rwmC3h7npDYPoZAqxKvXgdA+CBljkAKC6I4WIB
+XJhKPG/8gSAiBD5HsPEfY3Bji8AKCoIYTzwKVSIhYmpq04jjfaFYfw7hyDeAUFoRIqi1A4B+8hDT
+6R+DZGGLkAQEQOAkAEBQDoI3QEHO+P4eQ6hzLCC8DYf8UxywRi5F2LxXFoAwB4AwMYlhcAATqAuJ
+54ABECZaPMeYlwvg6AKCcHgSQEBKDgIc1Y/kyJFPhC+Go5BxnsQkAMDwLQZGSVChhbw+0EivgOII
+MwCwxiXF2AMDYKAYNrg6gNvo+BYiJDkPkYgpRHxflVKuVhMQDJADWAkJ4dxILbO+oIfZJ44hgB0P
+4dA3BpnODAHcBARw2iFW3H9Cx4o2ECdChl5bMhcitHsKoPwYE/j2AYG4U40SFglBZJ4uzMRlCvFD
+AdBza22ytnZO2dzDQtBwjyHJgi2T+wgHoPQTAYQeNKcOQQzgXA6AJCTHs8AAIoyAi7I8aAthUj3F
+YIEMjXx7j0P2nUBgbBSDMIWCacJ4h9jLnMPYV4hg0SMeSgU/ZA4BwdIG6Iy5/SDIHIE8mmi2ICF6
+pzO6nhWVs00g8h1tdMHTI/CuG0BATg7CNkYPweglgvg5n84glQBgdzxASEuekKz+vmgct4x05h7i
+wEOGqDY9iCnyAPRkUozQCAeBYCsfIxRTidHuLERAazTSNIIB4gYnyBgRIGgMABkSBCWLDSoSZAwc
+kDjaQIUxAxEEDDuQMLRA6LECV0QJVyjjwgDOcGIPAAgHAWAwPgXYlRAD/hCO03qdQFAJCMGsQA/h
+5jsHSwEUVTEsAETrMUNohrbDsHKPpgQjizABAkBsEUGAhpRHoOwdAAa1D8HCNAYRkjrgEBADAHw+
+hni1Nyz4AwOArBrAQEkNwhh6iaDIEIfo5RsDNJfK8KwbAEhNDqIyNgB41tulA2MfQxRUCXHuLQRh
++nQzrIMpYBocBVDSH4OAZ4w0GCFpOXuohBrCB0IGwQgw7iBw/IENQroZCB2GIKOEgYQCBpzIEJgg
+YZyBl8IFIsgQ01H0/AYGoUYygBgXBGCkeYjQogpTgOfFilAEEZAcHcWY2R+jpG+NifQYQfJZVGAw
+BwdRZjeH6x0ad7QytqQ4rAFQQAo5hyqAQEgNwh0UHqoUeo8gAgVA8CgfQvxPiEbivQJQXL4jXGca
+8b7UiZJ7CmGgBITg7ypIQmirzBzuqwv8PkYYpBJj3FqI0OToMbEuSQAwn4Tgw0hFeJo6w+q+aJIG
+K0gYTCVC3IGyuNxMgUEDGAQMC5A5Gr3IELIlUDSBVmIE5cABosc47IQAsMwnBhgDAsCIFA9BIhYB
+gjMdCNlKLtAcAsMgmRcrnhuPcVAeQt5aAQAvB4rBrD9HYOEaw9hPBrcqZYnYPwobwHCNraQIQUAB
+AcBevyAgBIQHcOkfY0RciletYRbhVlbhQDJLIPIkUCF50m5ggUL7dCQHwLYR+HjtUtKtB5vZYwS6
+6IGBolWxgACXJdf4gQriBwaINxggR+iWgtIHE4gTohhkDSoo6n+ztobS2ptbbG2tuKUQ6AcBbRjt
+D+SkPPdW7A4bu35vPeu9y0ACAgBgD5JiUMhAfQg6kferclH+O8cw36ekuAKDAJIWwFBTD7jI5IDL
+/pX5QANsY+RgifEYPgW4kbKl+oUlazYABPGpIGOjFpAxskqDcQPnRBRnEDCKQPERaLCWPOyQPxoA
+O/ECAp5IgXoQADvK30fZ+0dp7V2vtkeO22eWwk/Ixl3jCrqj611zePXt7dzYQAUFwRgrgKCoH8TU
+aHFmr1CheoJ8gAD4F+J1RIuBJokXy2EgYoSBhdJVzYgQUyBguIGL8gYErMEDCWQO7JMfMkCCiQOt
+BAmIEC7k5y/WIGG480IGxQIECQIGAysGIG9gIEGIIGsQIEGKJg9k6S9q6Y9w90MuUsqMDYQgHeHW
+H0ea/IsGAUAgAongDkH4G+GeGEH4G2GOFwhOCACgT2CoDIAEAqBABWhWAGH+HmHWHEH0GsGAFmH2
+NuFAPY4SJY+E3a3e+K3o+OKyfmfqvKCoDQs+AKHynK1URoHG+QOCAKBYueAUCqECMiLuAg+oV6se
+MCHwF4E0EKHyF2EsD4YSA2/aIG5W/C/6AA1kIE7AIID8IGEGKyxkIExomcIGBiIGx0pcIEfiIEBs
+6IIGHYIGBEK6/2AADwIGsWJXAq9o6W9u6cZAyaAiAaDqFiGuymcAvaDIxcsczwBOAaDsFqGwHyGA
+E8lqVAHqYaC2DaH2G2GQF8H6HMGyGibEAOAIBGBsCCAGBIBqBuH4G6GWGWHsFCDiCcPYHa8ooA3X
+Cc67CjECJeiWA6BKAUCyEQFOIWBOBSQYEIDfBEFo/Iw1DAOIAIzSCiAWCsEGE6AA3WsEL2N8V8Ww
+QOtQEwECHyF6EyEAbgCcIGFWIGbHEUMAJU/cIECaIGzmKwEoIGr0IFE02UAAxNEeAA/qAAB4JcHM
+IGFFEaIGLyIECO1qIGpUdE2AAAFgILFA6U9s6a9y6eQ4AQAYAgweFUGeMMHAG0HqE8DVJksciYBM
+AYDaFQGiTg22O6H6H0HsFYEEDIKeGoGSJYJoViCUDeEWAQCGDODeHu8SEOHyF0Eq/BIlG+63Ce3l
+HEJeu4u8hyEUFGL6ACVSC2usGg6HHsiCBQB6Ca+c+gd67GhaLG5QMGHvDeEwEFFwFAsmeqv4IE0/
+JKIIPfAOIGGkK7I6IFI+ABJCIHJIoOIFJPJSIM/+AA/yIEqoJhD6lS46IGGeIGyyIEotJ3AvFHJ/
+FLKHKLKOHVKTKXKaIJHLKiDYFMGgSOAUAPOUCQH4G4GSF25OfoAqweFWGoTg7iHoEuDCB6dANPCb
+LrHC6+JW+UCOC0AUCsECEwH4l+Gw3MD0C4dkHEG1MMS0AQCADED0vSDcEK1WLIheH2GqF+FoHsFE
+DjIygezMAA1oIEpkIKF0IG7A9OKtNKABNPNSxLAXNaIHNeIKmwIFBIKusJJyIFIeME/kIGjPOBFF
+J9A09FKFKIwhOPOTKZKcIFOaAaDeFWGqH4HKd0HqEyDIyy5LCm3AEuiMAoBABSHoEcCmBSa+Hsot
+PS+JLvPYIGAOCCDGD2AQQ+D6kgF0FYruEQDcH+HuHk9dP8SsAJMRMU+eE1Mab0TLMgQGNcMoF8E2
+EIHyF8E4z8dJDUIFQqAABwJc5M5g+iK5Q9RAIHJFNWsJNcIGHTUoIGyWK2DCIG8iIMD+IGEEWw2a
+9nJ5AxFIyZOLR3KRKVR9OZKgAaDiFcGwMcFcEwrGrKK8AUC4EYFXL0B8HmEYCiBOJMHmHgnG+G3e
+HSG6GkHuFODwCwAQq0EaLcC8DPGKGwG6HmEkC0BmzoJTTkSuAKa4Cs+cEAEyAAXbDVIEN7IIPFMp
+ISUPIabexAAADqJVNib0IENKIEQmIFQnEcKvUk/1U3RFJLUwIFNGIEB1I0K7N6AA13JKE4IGSFRp
+J7AzKAuTRzONVfOVR+WxVnVqGywGFIEaHuFsEiw8K7V9WBWFWJWNWRWVCaDeFUGotYQkH8QiHUAK
+BKBwCGH4HEGmrcBGBqB3DmEwEMtQEsD3XIQ2ZQCOCy7yD/XWViAbDWOK8CP7DfDjDnDqYTR/RbH/
+EqIHQmDSIGpOIMF4IGhVJAJlYNbgIFUrRHJNRKIGGgIGLrbmK3PMIEGDbsvGABU/YzVVOHVZR1KN
+ZBVjKeA6BNVoFdZMGKFKEdZUEgDnV7V/WCu7WHWLWOHxWTWWAYDWFKGcAIJwBMikHUHSHsFWD9K8
+HAGgGIAWDAEoFsAGBCBgBqHqFADcCkH4SWFnagOM7qCWC67yD4sQJq7842Qs+va6+2+6++p2S216
+IEF8IGBUJVD62IAA5dcAIGBIJUdcIFUMJhblNRYRJHbtYWABC/boIHNAK2CyIGsiIMEWIGDtVMAG
+6RFDY1VXRxVbcXORVhOXcdchZKwHcrcvczZdc3Zjc/ZpWWAaDcFTNGAGAGAEHrGwCel8G3YaMAAy
+BKBeAWDOE6F6JMHsHtSSDEB+VW7jeIteKADCAUCgD3I6t8405M8AQG8EUK8K8OFuEk8WNcS3UgAA
+SEINbIem1uIM/UIEFRJoIG6wIE/mIFMKJZfTRDfZYVbxIoABigAAFiK6xVAMIK/MIEFJf5f9VTOF
+RvKDgHR5gNZFSDgVcpcsFtcxc1Zhc7ZldBdFS43eMOaaFADbiuJaAKBkCYC+AWC2EUFAkgF2Fqac
+Cm1W1bXI5QfGKy4m4qVoElIKNLecUgQGhewGFMEowO08+ow2d4QHk2LHJu4dNyIFJWIFFgAAXUJY
+sJYsIET8IM86IE8+9aJVi3fXUs/pi+ILLDRcIGHUJlRNeGIEIAEABA3RAwAOIM4QAAgEAwWZk4ww
+GFhEKHokCuL388nS44NH5BIZFI4MAQQDAgDTgqme/XU4G09U8aiPHwEFA6JgacVc2X0xVKjnutkg
+c5JR5ACi4jFWBBAMB880YURO/3w83gAAMCAXKlY1n67HC1nsnjWSaRAwCAACCSeekwBx+YDM91ki
+T8+V+nUHab9f8BgcFg8ABRiSy6/nK12dLm81cCBhuUzQCScd0fCwGCAA/n7hNBocJawCBQOAHyx1
+SmbsiTcAH6/H1fgMCQYBhmTjE+2Wr00/9k+MIH4MwYNxIG/4MYIMosIGoMwoMI5Ek4Nr5ClIMa4M
+9oMN4M1JL0YMPKQzIMkIM0IMA4MPoMd4MHJEgYMgJBDIdEIlFBOehIiuGJ/HijrRJItaBn8kyUJU
+liXJgmSaJsnCdJ4nygKEoijQOpSmKcqCpKoqysK0rivLAsSyLMtDALaBoIgUMZMF0AgOBSFp6k4N
+InH4bhkl1A8hSHIi/gMHArDWBAkjcQp6k0MghH6cpsGctIDByKw2ASJo6kYtgBNOz0izJMqQNKzh
+8mQVZONa17ZHukgCK3Bxpn6cRpmMexWkGMzYH0fKkNOgZToMKKRFI5aDM+0QpoMVL20WgwsIMViD
+Esgw0oM2aBhogxpvGgbpIG8yBnmgx/IMB6RU4kADKRQqBz8gZ6PyhoGDQT5jAGEIZBsfpvmeZDgH
+zOK1SE0oDgEfRmFkUp9GeWhSgeOxaG0fh0m+mJNjKIKbAqDwTgcOpaGwfJhlESR7lmRg3yEBQvki
+WAChCGIgHkRAlhDEh3xMBYHDoWRun4dZwGoexNjMIjQAGDYUhpXBOl6fx7HoeJ6EyMQgn+dxyG7M
+2QZDQQciuNoECcOxGgAfh8n4ehLC+HJ+nObZopGAwdi0OAEiWORFLY0rO0ZkWiTKArOH2ZpZlMex
+XT6AB9nweqQAG0wGDYUpmgIDwWBXNRWFEe5XkKNGV2KkVHIG6yQo8ge0gAckiwSAG1gBt9UoHj6B
+igg13Vkg1ToGJqDGzUIAVGAFSgAyCBw4AAzoMH6DIEgYBIM4SBm+gxNoMS/LwQhoECONpCgEDQTh
+cAPVAItW5yIAoDWWZxaFRpJZlEBQqEATUCHQcp8FwSY9I+AIHAqDYEiiPhMH4axflgfRllgTshAO
+IQxjyiYRhYe+nDOf59HvWs5gQBIoD2TECHUcJ8l2So/yEAoXiQLTJCqMB9miXHoGSVdMNFgAmQA4
+PGdAICUz4hYAgCmoYqPQTAYQeMzZqR8AwQAwh5ASEcNgggAD/H+6wf7eIAwjaM0gaAthVD3FYIEM
+b4HxAAaqAdq4pBmADAyCYFhmgAD6aUKZ7ogwytQHwd4gblAAQLOSQZYwAGptEdZEUgxyiBnuIGVk
+gcTwAAKiiQaKxsHDOIcUNogynlTEGBDGYgxnCBjsIMNggw8oSRxjlHNooASGQdH9CKOkeyQpYZKW
+4OwjoOwfg6QZqI9B6CXDADofo6BuDTesGUPoCAjBqPwZ5y0IY+H5ipHYgY/R9ybJEmiHY0hcitHs
+KoPxzB9j5HsAwNwpxow2BLDk2JAytw7ekKMe6fAyGwH2q2UUcm5xgINGIgYOiDDtmHM2Z0z5oTRM
+EAMEAMQegMDEJYXERwDRaTGmAgY+h7DyHmJeCABQVhBCdJQNZfTPFrk1M1OZnWOjjH+PQd46wBge
+BcDJs00mjtQGkLsV73RBBmAWGMS4u2GgoBgbAfjrYrmnHwLIRQdB8jEFIyqaUAJinlmOQaZRA5mU
+dpNSelFKWQENAIAsLwkBaAEBUD8mrUSQuqIHK4eI+xuDIF7OgIbfHKx4mcARMQ7xzDiHsKUOwVx/
+MdG8AoLQiRVAEBMDhyQ+nMTQqMysbIwxcgCAiBwEhNwOnUm+TZ1g/h5jqHOPUSgXgbEbHU3GlSRG
+5jFIMDkgzegAHgpJM9yxAwYkGApFsgcRAADPINE2u6ZIsHUIGNxSVQyBw5IGNeQxIgTKojeQYdTI
+AGkGAiQYcVKgBgaBQDNXAnhhgAAIAUBMgy/gDieP1ocUphmmM6OscI3R7CmDuFhKY1z0ElAWBECw
+CgsCGFOAUFAOwhPgq3M+20n7cl/oDD8Ng+k1iVsekNuYsyDA1r6QYJZBl+zOPoQNzxAxa2eIHGcg
+YFW+2NMIAsgwSiDCrIMEC0BBhrSiVWQO8BA2yq0pAQMTRBlvEDHSQYFJBg2HFpCQM9iZgnHzUvSo
+BARQ0CCAOEQNAfWVzCvCSK3hLhvjbqWHYKw/hzjawyUcAICgHgTuYIYUwBAUg9CNDu6uKUz0BHyt
+GFIpw9BXyIkQDEaVNkGIKgqZ4RcFgAfgUe/xA8KkDtCQMGxBgPEGGaQZzRAwqkGw2QNn5Aw6kGSC
+QMUZBgMkGzDGVUViAAAWIMBu/FmSkX6IG/8AB2ImEGyyAC9oABDEGG2QY+xA7jgAGXMuw2dM/gAH
+BlcBx5LA5uIMMnTwAAXkGs7oAgZ4iQxkABZJxZ4SDRYpGAAC5BhlEJI+A0PIuBzgCAaBPJ8Hsmkf
+t4P4dI3hsD2FIHUK4/R0jcGkaAtoDgJAKCuIQUgBJ0lofDsMtU8x+DeGaMIejCWFmelDt7dRgg6Z
+6FeQZV6pCDadIGJIgwcMokDHKQYJhBhDkGDUQaiJA69ED4CQM9RAx478IMMcg0/iBjnIMLcgwnNR
+iuIM4wkkagAYHAA34AHEAAWFIHEgAGcQAXrAAH4+5Bg2kGFCQZuovyDWvIGwtvJBrBgAvMQM+RAz
+8EDkEQMJBBr7EDwGQPNYADtEDBQdPjJBgskGL6QPB8hdPgAqFx/KQDg/C/HigzTuwsiUBZmNpg4p
+dmD+HUN/pNeAEANAgAkKogRQgGBaEQJw/6bYpADuAb4zRiblDOEOiGKN1+JJIJjWJBhzEGAkQbUp
+A9DX05GQYSPAuXEGZsQPU4AOKEDHcpkgwhXNkGMyQPTZA865cINwUAALSDB4MJybe3QN78yINkwg
+fNgAOS6QQb0cycLgACEQZxweyDNtABfGJJAxEHNv2QYXxBut+mIHEvNJA+Oc9AAKggwto0ED0EAD
+7AAMTED2iQOh5A7T+iAQEwOokgDg9C3y82Vj6Aj+HMNgaQeqpipxgqNyOoA4BQBoBIKQPwTgwwJQ
+KxqBQL56kygIfYaQXQWDZQOgKTPTxUDpVT3TgwgxWokLIIgbwwgZQZqAgyNkCS2YgYWQgwLwgz5U
+EzS4gcAgADn4AAYjxqywACvzz4XogwYwwjnYRIgzSogbVzf7BA7o76+4gcGTLzU0IZT4gz8AgYZC
+yozokRUCy4g0FI6D1QkT8rd4kIMbeDOAgwVrhgga9MCRWIAD3yGAD4GCa4MoTUIQARoLsiaDswcg
+aoZ4e4UoO7ZodocTR6OgAI2oBYBAKIPYTQ3AJwLUCEDiZqUge4WgRoPAfIYQUMI8D0UIkDyYACX4
+gbl4o7kECLUggyDjiK0i/49YgxyAgb2ggYOwgwYA47TDeokS/jnMEIgb88FgtkLYtKjgAA5AADN5
+zIgwLhRThAgwWggzRogYUog0NAgcJgrUaggwL4kTCYgaw4gbRZoavggZ6jVMNIgcX4ACLqLrGoEA
+g0UAAEMwAEXQgkWIgYMMb0MC2ArYBYMgTAXoAgEQGaZSVqZyXIfocIaQZipa4Yfwd4cqvyZw0wBR
+8wPQS4AwGoKMGUhMCURSTIfAegeBl4LwG4fwdgcSZEUUlwJ8WbCyKcD4gbdIAD6IgYLogyzAADW4
+gb2QgYXLAIgZ4bUAgbfAgclrlD88fAAABggyLUawgxWYAEooACIL9ThowDzMmogzdokJSggYMS9B
+SIgYQggzxhv4gYPJwwRaLjxwgwFRzog0DYgYWDCQg0mAgb6ogccIADSbiQgYOQg0GAgcZUiogzKw
+gYXggwFYgzmjKjzwj7HwHwJwBYLoR7jCDo9yeKEiUgfgcBYS4IPALIfweAc71alI0wBIywPASgyQ
+KcsckDrCOMAw1AXgTIRJ4AScW0l03wgbyIgceTkrPThYgZwoo7O4AC0r4Igb5kFM5U5AAEFwAEMQ
+ADhwgc6wFz4UJEHs5coYADMb0UEQwDJ4gaxxwIkCIzjjKa2Doy9UmgADCIkLjkc8YogZKyKsXgAA
+dbzT9gg08wACyiyYkUuUwy0zqIkL704IAElrM7WkSx1QASSgNQQjEYM8tiYI5KPRMsRaLQfgbYY4
+YIewVAPQLQjYdbx7bxOYA4BAJoOz+hLJPz/KohkSbplYa4YQXipYOoKYf4fIeqOE39IdIlItIyla
+GIIYMwPwA4IIMQOoAVFg4BTkPotJBIAh1h1Q9wfQagXoWKH574egd0+cUJqorYIoNLEQHwL0wa2K
+BdGlKrGxBK66cAfYadLyH4Mof4eqfNI9P1P9QFQIwYAgE4HYJL+tNgAgD4FwHYrU1iiA5KKVLC7A
+f4xwai7wVgTBZgWATzE7IdIwAgFAHoJoA4HwLoOIAgDoFohA2q2aW62iGCJ4fwflSrttS4ZAVQS5
+ZgWQT9T1QVX9YFYNYRyq2y1IE4GC6AHwJgAoGYJoMZF4CUCoXQUtOwXoVwfocYaYY4qxi1YYkQho
+Aq1IFAGMygJoAwGQJYMAtoB4CQfQaIXIUwfgagXgVRO4agZVH9btb1fdflfqk4gIAA8BAAADAAAA
+AQCfAAABAQADAAAAAQAzAAABAgADAAAABAAAHsABAwADAAAAAQAFAAABBgADAAAAAQACAAABEQAE
+AAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAEAAABFgADAAAAAQAzAAABFwAEAAAAAQAAHf4B
+HAADAAAAAQABAAABPQADAAAAAQACAAABUgADAAAAAQABAAABUwADAAAABAAAHsiHcwAHAAAHqAAA
+HtAAAAAAAAgACAAIAAgAAQABAAEAAQAAB6hhcHBsAiAAAG1udHJSR0IgWFlaIAfZAAIAGQALABoA
+C2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEIAAAAb2RzY20A
+AAF4AAAFbGNwcnQAAAbkAAAAOHd0cHQAAAccAAAAFHJYWVoAAAcwAAAAFGdYWVoAAAdEAAAAFGJY
+WVoAAAdYAAAAFHJUUkMAAAdsAAAADmNoYWQAAAd8AAAALGJUUkMAAAdsAAAADmdUUkMAAAdsAAAA
+DmRlc2MAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5lcmljIFJHQiBQ
+cm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt
+bHVjAAAAAAAAAB4AAAAMc2tTSwAAACgAAAF4aHJIUgAAACgAAAGgY2FFUwAAACQAAAHIcHRCUgAA
+ACYAAAHsdWtVQQAAACoAAAISZnJGVQAAACgAAAI8emhUVwAAABYAAAJkaXRJVAAAACgAAAJ6bmJO
+TwAAACYAAAKia29LUgAAABYAAALIY3NDWgAAACIAAALeaGVJTAAAAB4AAAMAZGVERQAAACwAAAMe
+aHVIVQAAACgAAANKc3ZTRQAAACYAAAKiemhDTgAAABYAAANyamFKUAAAABoAAAOIcm9STwAAACQA
+AAOiZWxHUgAAACIAAAPGcHRQTwAAACYAAAPobmxOTAAAACgAAAQOZXNFUwAAACYAAAPodGhUSAAA
+ACQAAAQ2dHJUUgAAACIAAARaZmlGSQAAACgAAAR8cGxQTAAAACwAAASkcnVSVQAAACIAAATQYXJF
+RwAAACYAAATyZW5VUwAAACYAAAUYZGFESwAAAC4AAAU+AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBH
+AEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAaQENAGsAaQAgAFIARwBCACAAcAByAG8AZgBpAGwA
+UABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgAcgBpAGMAUABlAHIAZgBpAGwAIABSAEcAQgAg
+AEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgEOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcA
+QgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAAUgBWAEKQGnUoACAAUgBHAEIAIIJy
+X2ljz4/wAFAAcgBvAGYAaQBsAG8AIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAbwBHAGUAbgBlAHIA
+aQBzAGsAIABSAEcAQgAtAHAAcgBvAGYAaQBsx3y8GAAgAFIARwBCACDVBLhc0wzHfABPAGIAZQBj
+AG4A/QAgAFIARwBCACAAcAByAG8AZgBpAGwF5AXoBdUF5AXZBdwAIABSAEcAQgAgBdsF3AXcBdkA
+QQBsAGwAZwBlAG0AZQBpAG4AZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbADBAGwAdABhAGwA4QBu
+AG8AcwAgAFIARwBCACAAcAByAG8AZgBpAGxmbpAaACAAUgBHAEIAIGPPj/Blh072TgCCLAAgAFIA
+RwBCACAw1zDtMNUwoTCkMOsAUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMDkwO1
+A70DuQO6A8wAIAPAA8EDvwPGA68DuwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUA
+bgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4j
+DkQOHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8A
+ZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkAVQBuAGkAdwBl
+AHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkAIAQ/BEAEPgREBDgE
+OwRMACAAUgBHAEIGRQZEBkEAIAYqBjkGMQZKBkEAIABSAEcAQgAgBicGRAY5BicGRQBHAGUAbgBl
+AHIAaQBjACAAUgBHAEIAIABQAHIAbwBmAGkAbABlAEcAZQBuAGUAcgBlAGwAIABSAEcAQgAtAGIA
+ZQBzAGsAcgBpAHYAZQBsAHMAZXRleHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUgSW5jLiwgYWxs
+IHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAAAPNSAAEAAAABFs9YWVogAAAAAAAAdE0AAD3uAAAD
+0FhZWiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEBzQAA
+c2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD3AAAwGw=
+--Apple-Mail=_1BC0D92B-EB50-484A-AF4B-0C80C4D506C1--
+
+--Apple-Mail=_6CE40591-952E-48AE-9193-1F3B79BFF42E--

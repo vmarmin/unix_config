@@ -1,0 +1,90 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <marcnarc@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director9.mail.iad3b.rsapps.net ([172.30.191.6])
+	by backend33.mail.iad3b.rsapps.net with LMTP id qKRnKFfrYlyTQAAApu/jSQ
+	for <vmarmin@xiplink.com>; Tue, 12 Feb 2019 10:50:47 -0500
+Received: from proxy1.mail.ord1d.rsapps.net ([172.30.191.6])
+	by director9.mail.iad3b.rsapps.net with LMTP id qEZfJVfrYlwYTgAAbC0CoQ
+	; Tue, 12 Feb 2019 10:50:47 -0500
+Received: from smtp40.gate.ord1d ([172.30.191.6])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy1.mail.ord1d.rsapps.net with LMTP id sGTrHVfrYlyEMAAAasrz9Q
+	; Tue, 12 Feb 2019 10:50:47 -0500
+Return-Path: <marcnarc@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: devs@xiplink.com
+X-Originating-Ip: [184.106.54.65]
+Authentication-Results: smtp40.gate.ord1d.rsapps.net; iprev=pass policy.iprev="184.106.54.65"; spf=pass smtp.mailfrom="marcnarc@xiplink.com" smtp.helo="smtp65.ord1d.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: f6601e8e-2edd-11e9-aefd-525400f204c2-1-1
+Received: from [184.106.54.65] ([184.106.54.65:55816] helo=smtp65.ord1d.emailsrvr.com)
+	by smtp40.gate.ord1d.rsapps.net (envelope-from <marcnarc@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id BE/ED-26817-65BE26C5; Tue, 12 Feb 2019 10:50:47 -0500
+Received: from smtp9.relay.ord1d.emailsrvr.com (localhost [127.0.0.1])
+	by smtp9.relay.ord1d.emailsrvr.com (SMTP Server) with ESMTP id B9EF9C0438
+	for <devs@xiplink.com>; Tue, 12 Feb 2019 10:50:46 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1549986646;
+	bh=EMOK3pnHDqctA3iiHC9qEmzdhvBXBNmfqA5VFvE6XLY=;
+	h=To:From:Subject:Date:From;
+	b=sgs+NpXgOD4qmzfGRbiiybWIsO7+pSvNUvtwGzm9yO+T86uFpmdLKt2zwFj8zNK70
+	 x4Hb4Z6ERAb86CzWYzw+gGUdSOtFEbwKZbYds3Gmgry/P41vJApAORIN/KmL8SVNkt
+	 OOLpO/uBmAG+lHm6fs5Y4A9wT/1CSxCCKw3O7WnU=
+X-Auth-ID: mbranchaud@xiplink.com
+Received: by smtp9.relay.ord1d.emailsrvr.com (Authenticated sender: mbranchaud-AT-xiplink.com) with ESMTPSA id 89E80C03FA
+	for <devs@xiplink.com>; Tue, 12 Feb 2019 10:50:46 -0500 (EST)
+X-Sender-Id: mbranchaud@xiplink.com
+Received: from [10.10.1.32] ([UNAVAILABLE]. [192.252.130.194])
+	(using TLSv1.2 with cipher AES128-SHA)
+	by 0.0.0.0:465 (trex/5.7.12);
+	Tue, 12 Feb 2019 10:50:46 -0500
+To: 'devs' <devs@xiplink.com>
+From: Marc Branchaud <marcnarc@xiplink.com>
+Subject: IETF starting to grapple with PEPs and transport encryption (e.g.
+ QUIC)
+Message-ID: <b51ed2c8-f4b0-6282-c137-8ac320749021@xiplink.com>
+Date: Tue, 12 Feb 2019 10:50:46 -0500
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101
+ Thunderbird/60.4.0
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: en-US
+Content-Transfer-Encoding: 7bit
+
+The IETF set up a mailing list last year to discuss optimizing encrypted 
+transports over satellite links:
+
+https://www.ietf.org/mailman/listinfo/etosat
+Modern geosynchronous satellite networks are characterized by relatively 
+long latency but high bandwidth paths. For TCP, Performance Enhancing 
+Proxies (PEPs) are used to hide the impact of latency on TCP performance.
+With PEP, TCP connection throughput of greater than 200 Mbps is state of 
+the art over satellite Internet access services. Transports such as QUIC 
+which cryptographically protect transport headers (intentionally) 
+prevent PEP techniques from being applied (for good reasons). The 
+purpose of this discussion list is to explore ideas for getting the 
+performance of transports such as QUIC on par with PEP-ed TCP 
+performance but without the use of a PEP equivalent.
+
+Participation has been very low (only a couple dozen messages so far), 
+but has recently picked up a bit.
+
+Related stuff:
+
+QUIC working group
+https://datatracker.ietf.org/wg/quic/about/
+"A UDP-based, stream-multiplexing, encrypted transport protocol"
+
+NetWork Coding for Efficient Network Communications Research Group
+https://irtf.org/nwcrg
+
+Path Aware Networking Research Group
+https://irtf.org/panrg
+
+		M.

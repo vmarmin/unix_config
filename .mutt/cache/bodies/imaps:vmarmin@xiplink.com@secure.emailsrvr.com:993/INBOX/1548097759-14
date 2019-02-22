@@ -1,0 +1,376 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <jwaters@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director9.mail.iad3b.rsapps.net ([172.31.255.6])
+	by backend33.mail.iad3b.rsapps.net with LMTP id gCTqNG4xR1wDDAAApu/jSQ
+	for <vmarmin@xiplink.com>; Tue, 22 Jan 2019 10:06:22 -0500
+Received: from proxy20.mail.iad3b.rsapps.net ([172.31.255.6])
+	by director9.mail.iad3b.rsapps.net with LMTP id aLO+NG4xR1yFCwAAbC0CoQ
+	; Tue, 22 Jan 2019 10:06:22 -0500
+Received: from smtp15.gate.iad3b ([172.31.255.6])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy20.mail.iad3b.rsapps.net with LMTP id GKB3NG4xR1y6OQAAcDxLoQ
+	; Tue, 22 Jan 2019 10:06:22 -0500
+Return-Path: <jwaters@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: vmarmin@xiplink.com
+X-Originating-Ip: [146.20.161.82]
+Authentication-Results: smtp15.gate.iad3b.rsapps.net; iprev=pass policy.iprev="146.20.161.82"; spf=pass smtp.mailfrom="jwaters@xiplink.com" smtp.helo="smtp82.iad3b.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: 47d197d0-1e57-11e9-b270-5254003d6d3a-1-1
+Received: from [146.20.161.82] ([146.20.161.82:51584] helo=smtp82.iad3b.emailsrvr.com)
+	by smtp15.gate.iad3b.rsapps.net (envelope-from <jwaters@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id A8/46-26175-E61374C5; Tue, 22 Jan 2019 10:06:22 -0500
+Received: from smtp3.relay.iad3b.emailsrvr.com (localhost [127.0.0.1])
+	by smtp3.relay.iad3b.emailsrvr.com (SMTP Server) with ESMTP id B2299404A8
+	for <vmarmin@xiplink.com>; Tue, 22 Jan 2019 10:06:22 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1548169582;
+	bh=pf4oyHmDCIM/WxL4sqG2tT13RkmG0N7SPGXNog8rDJc=;
+	h=Date:Subject:From:To:From;
+	b=fmKPcrhC4DvoVlmD02cj7zSFBl+mONUpqK9mKR1eqEg2yJAUgXWo7Afh+PzzqUc1c
+	 HJT/3qRVDiq4Rf2D1ZYHaa27aQNCC3DdVv4Feamx9zcAdR5LxiazXK7TM5ACaqXH1w
+	 ahujc3m88m4jTdIYkvMUIy2fTNb808zPHUfLbX+4=
+X-Auth-ID: jwaters@xiplink.com
+Received: by smtp3.relay.iad3b.emailsrvr.com (Authenticated sender: jwaters-AT-xiplink.com) with ESMTPSA id 5CEC340432
+	for <vmarmin@xiplink.com>; Tue, 22 Jan 2019 10:06:22 -0500 (EST)
+X-Sender-Id: jwaters@xiplink.com
+Received: from [172.20.2.234] ([UNAVAILABLE]. [63.96.47.2])
+	(using TLSv1.2 with cipher AES256-GCM-SHA384)
+	by 0.0.0.0:465 (trex/5.7.12);
+	Tue, 22 Jan 2019 10:06:22 -0500
+User-Agent: Microsoft-MacOutlook/10.15.0.190115
+Date: Tue, 22 Jan 2019 10:06:21 -0500
+Subject: Re: Please welcome Valentin Marmin to the engineering team
+From: Jack Waters <jwaters@xiplink.com>
+To: Valentin Marmin <vmarmin@xiplink.com>
+Message-ID: <67E30B1F-3F73-48F1-8BA6-BF4F36E3E888@xiplink.com>
+Thread-Topic: Please welcome Valentin Marmin to the engineering team
+References: <A5AB4C17-7276-44A3-AC0B-4A92A85A4604@xiplink.com>
+ <5a16fc4e-27b1-d149-7d01-4e581ae5db27@xiplink.com>
+In-Reply-To: <5a16fc4e-27b1-d149-7d01-4e581ae5db27@xiplink.com>
+Mime-version: 1.0
+Content-type: multipart/alternative;
+	boundary="B_3630996382_767352496"
+
+> This message is in MIME format. Since your mail reader does not understand
+this format, some or all of this message may not be legible.
+
+--B_3630996382_767352496
+Content-type: text/plain;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+Thanks Valentin---see you then.
+
+=20
+
+From: Valentin Marmin <vmarmin@xiplink.com>
+Date: Tuesday, January 22, 2019 at 8:56 AM
+To: Jack Waters <jwaters@xiplink.com>
+Subject: Fwd: Re: Please welcome Valentin Marmin to the engineering team
+
+=20
+
+Hello Jack,
+
+Thank you very much for your email, I am very happy to join the team!
+
+After a little over two weeks in Montreal, I still don't mind the cold weat=
+her so I hope this continues that way. I've had the chance to listen to your=
+ podcast interview when I was looking up XipLink, that was really interestin=
+g. I look forward to meeting you next month then.
+
+Best regards,
+
+Valentin Marmin
++1 438-738-7459
+
+
+
+-------- Forwarded Message --------=20
+
+Subject: Re: Please welcome Valentin Marmin to the engineering team
+Date: Tue, 22 Jan 2019 02:07:01 -0500
+From: Jack Waters <jwaters@xiplink.com>
+To: vmarmin@xiplink.com
+
+
+
+
+
+Hello Valentin,
+
+=20
+
+Welcome to the iDirect team!   I am based in the US (Philadelphia) but get =
+up to Montreal one week per month so look forward to meeting you in February=
+.   We are very happy to have you on-board for this extremely important posi=
+tion of automating XipLink=E2=80=99s recurring and regression testbed.   I am sorr=
+y for the cold weather but you will find the =E2=80=9CHabs=E2=80=9D (Montreal Habitants)=
+ make up for it with plenty of festivities in the spring and summer!
+
+=20
+
+Very Best Wishes,
+
+=20
+
+Jack W. Waters=20
+
+               CEO of XipLink, Inc.
+               4200 St. Laurent Boul, Suite 1010
+
+               Montreal, QC H2W-2R2  CANADA
+
+               (p) +1 514 848 9640 x234  * jwaters@xiplink.com  * (c) +1 61=
+0 299 4711=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+From: Karim Fodil-Lemelin <kfodil-lemelin@xiplink.com>
+Date: Monday, January 21, 2019 at 6:20 PM
+To: Everyone <everyone@xiplink.com>, <vmarmin@xiplink.com>
+Subject: Please welcome Valentin Marmin to the engineering team
+
+=20
+
+Hi Everyone,
+
+I am pleased to announce that Valentin Marmin has agreed to join our team a=
+s Automation Engineer. Valentin earned his Master's degree in Engineering at=
+ the National Institute of Applied Science (INSA of Rennes) in Industrial In=
+formatics. Valentin has five years of experience in Software development, QA=
+ engineering and Test development. Valentin's knowledge of Python and Pytest=
+ will be a nice addition to our current team.
+
+Valentin will be responsible for helping us design and implement the Automa=
+ted Test Framework (ATF) and feed the framework with well crafted and organi=
+zed tests.
+
+After moving from France to Montreal for 2 weeks, Valentin braved the cold =
+Canadian winter and officially started on a bone chilling day, January 21st =
+at -34C with wind chill. Another fun fact is the 21st of January is also the=
+ anniversary of Quebec's province flag that displays french heritage.
+
+Valentin's contact information can be found below:
+
+Email: vmarmin@xiplink.com
+
+Skype: valentin.marmin
+
+Please join me to give a warm welcome to Valentin.
+
+Best regards,
+--=20
+Karim Fodil-Lemelin
+Vice President of Engineering
+=20
+XipLink Inc. www.xiplink.com
+(514) 848-9640 x223
+(514) 848-9644 fax
+
+
+--B_3630996382_767352496
+Content-type: text/html;
+	charset="UTF-8"
+Content-transfer-encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsof=
+t-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" xmlns:m=
+=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org=
+/TR/REC-html40"><head><meta http-equiv=3DContent-Type content=3D"text/html; char=
+set=3Dutf-8"><meta name=3DGenerator content=3D"Microsoft Word 15 (filtered medium)=
+"><!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+pre
+	{mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;
+	font-style:italic;}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;
+	font-style:italic;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue vlink=3Dp=
+urple><div class=3DWordSection1><p class=3DMsoNormal><i><span style=3D'font-size:1=
+2.0pt'>Thanks Valentin---see you then.<o:p></o:p></span></i></p><p class=3DMso=
+Normal><i><span style=3D'font-size:12.0pt'><o:p>&nbsp;</o:p></span></i></p><di=
+v style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0i=
+n'><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;color:black'>From: </=
+span></b><span style=3D'font-size:12.0pt;color:black'>Valentin Marmin &lt;vmar=
+min@xiplink.com&gt;<br><b>Date: </b>Tuesday, January 22, 2019 at 8:56 AM<br>=
+<b>To: </b>Jack Waters &lt;jwaters@xiplink.com&gt;<br><b>Subject: </b>Fwd: R=
+e: Please welcome Valentin Marmin to the engineering team<o:p></o:p></span><=
+/p></div><div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p></div><p>Hello Jack,<o=
+:p></o:p></p><p>Thank you very much for your email, I am very happy to join =
+the team!<o:p></o:p></p><p>After a little over two weeks in Montreal, I stil=
+l don't mind the cold weather so I hope this continues that way. I've had th=
+e chance to listen to your podcast interview when I was looking up XipLink, =
+that was really interesting. I look forward to meeting you next month then.<=
+o:p></o:p></p><p>Best regards,<o:p></o:p></p><p>Valentin Marmin<br>+1 438-73=
+8-7459<o:p></o:p></p><div><p class=3DMsoNormal><br><br>-------- Forwarded Mess=
+age -------- <o:p></o:p></p><table class=3DMsoNormalTable border=3D0 cellspacing=
+=3D0 cellpadding=3D0><tr><td nowrap valign=3Dtop style=3D'padding:0in 0in 0in 0in'><=
+p class=3DMsoNormal align=3Dright style=3D'text-align:right'><b>Subject: <o:p></o:=
+p></b></p></td><td style=3D'padding:0in 0in 0in 0in'><p class=3DMsoNormal>Re: Pl=
+ease welcome Valentin Marmin to the engineering team<o:p></o:p></p></td></tr=
+><tr><td nowrap valign=3Dtop style=3D'padding:0in 0in 0in 0in'><p class=3DMsoNorma=
+l align=3Dright style=3D'text-align:right'><b>Date: <o:p></o:p></b></p></td><td =
+style=3D'padding:0in 0in 0in 0in'><p class=3DMsoNormal>Tue, 22 Jan 2019 02:07:01=
+ -0500<o:p></o:p></p></td></tr><tr><td nowrap valign=3Dtop style=3D'padding:0in =
+0in 0in 0in'><p class=3DMsoNormal align=3Dright style=3D'text-align:right'><b>From=
+: <o:p></o:p></b></p></td><td style=3D'padding:0in 0in 0in 0in'><p class=3DMsoNo=
+rmal>Jack Waters <a href=3D"mailto:jwaters@xiplink.com">&lt;jwaters@xiplink.co=
+m&gt;</a><o:p></o:p></p></td></tr><tr><td nowrap valign=3Dtop style=3D'padding:0=
+in 0in 0in 0in'><p class=3DMsoNormal align=3Dright style=3D'text-align:right'><b>T=
+o: <o:p></o:p></b></p></td><td style=3D'padding:0in 0in 0in 0in'><p class=3DMsoN=
+ormal><a href=3D"mailto:vmarmin@xiplink.com">vmarmin@xiplink.com</a><o:p></o:p=
+></p></td></tr></table><p class=3DMsoNormal><br><br><br><o:p></o:p></p><p clas=
+s=3DMsoNormal><i><span style=3D'font-size:12.0pt'>Hello Valentin,</span></i><o:p=
+></o:p></p><p class=3DMsoNormal><i><span style=3D'font-size:12.0pt'>&nbsp;</span=
+></i><o:p></o:p></p><p class=3DMsoNormal><i><span style=3D'font-size:12.0pt'>Wel=
+come to the iDirect team!&nbsp;&nbsp; I am based in the US (Philadelphia) bu=
+t get up to Montreal one week per month so look forward to meeting you in Fe=
+bruary.&nbsp;&nbsp; We are very happy to have you on-board for this extremel=
+y important position of automating XipLink=E2=80=99s recurring and regression test=
+bed.&nbsp;&nbsp; I am sorry for the cold weather but you will find the =E2=80=9CHa=
+bs=E2=80=9D (Montreal Habitants) make up for it with plenty of festivities in the =
+spring and summer!</span></i><o:p></o:p></p><p class=3DMsoNormal><i><span styl=
+e=3D'font-size:12.0pt'>&nbsp;</span></i><o:p></o:p></p><p class=3DMsoNormal><i><=
+span style=3D'font-size:12.0pt'>Very Best Wishes,</span></i><o:p></o:p></p><p =
+class=3DMsoNormal><span style=3D'font-size:10.5pt;color:black'>&nbsp;</span><o:p=
+></o:p></p><p class=3DMsoNormal style=3D'mso-margin-top-alt:0in;margin-right:0in=
+;margin-bottom:6.0pt;margin-left:77.75pt;text-indent:-.5in;mso-line-height-a=
+lt:9.0pt'><span style=3D'font-size:24.0pt'>Jack W. Waters </span><o:p></o:p></=
+p><p class=3DMsoNormal><span style=3D'color:black'>&nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp;CEO of XipLink, Inc.<br>&nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp;4200 St. Laurent Boul, Suite 1010</span><o:p></=
+o:p></p><p class=3DMsoNormal><span style=3D'color:black'>&nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp;Montreal, QC H2W-2R2 &nbsp;CANADA</span><o:p=
+></o:p></p><p class=3DMsoNormal><span style=3D'color:black'>&nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(p) +1 514 848 9640 x234 &nbsp;*&nbsp;</s=
+pan><span style=3D'font-size:12.0pt'><a href=3D"mailto:jwaters@xiplink.com"><spa=
+n style=3D'font-size:11.0pt;color:purple'>jwaters@xiplink.com</span></a></span=
+><span style=3D'color:black'>&nbsp;&nbsp;* (c) +1 610 299 4711&nbsp;</span><o:=
+p></o:p></p><p class=3DMsoNormal><span style=3D'font-size:12.0pt'>&nbsp;</span><=
+o:p></o:p></p><p class=3DMsoNormal style=3D'mso-margin-top-alt:0in;margin-right:=
+0in;margin-bottom:6.0pt;margin-left:41.75pt;mso-line-height-alt:9.0pt'><span=
+ style=3D'font-size:10.0pt;font-family:"Arial",sans-serif;color:black;letter-s=
+pacing:-.25pt'><img border=3D0 width=3D159 height=3D51 style=3D'width:1.6562in;heigh=
+t:.5312in' id=3D"Picture_x0020_3" src=3D"cid:image001.png@01D4B1F7.29C0B2C0" alt=
+=3D"signature_226653417"><img border=3D0 width=3D232 height=3D53 style=3D'width:2.4166=
+in;height:.552in' id=3D"Picture_x0020_2" src=3D"cid:image002.png@01D4B1F7.29C0B2=
+C0" alt=3D"cid:image002.png@01D25564.8AA81ED0"></span><o:p></o:p></p><p class=3D=
+MsoNormal><i><span style=3D'font-size:12.0pt'>&nbsp;</span></i><o:p></o:p></p>=
+<p class=3DMsoNormal><i><span style=3D'font-size:12.0pt'>&nbsp;</span></i><o:p><=
+/o:p></p><p class=3DMsoNormal><i><span style=3D'font-size:12.0pt'>&nbsp;</span><=
+/i><o:p></o:p></p><div style=3D'border:none;border-top:solid #B5C4DF 1.0pt;pad=
+ding:3.0pt 0in 0in 0in'><p class=3DMsoNormal><b><span style=3D'font-size:12.0pt;=
+color:black'>From: </span></b><span style=3D'font-size:12.0pt;color:black'>Kar=
+im Fodil-Lemelin <a href=3D"mailto:kfodil-lemelin@xiplink.com">&lt;kfodil-leme=
+lin@xiplink.com&gt;</a><br><b>Date: </b>Monday, January 21, 2019 at 6:20 PM<=
+br><b>To: </b>Everyone <a href=3D"mailto:everyone@xiplink.com">&lt;everyone@xi=
+plink.com&gt;</a>, <a href=3D"mailto:vmarmin@xiplink.com">&lt;vmarmin@xiplink.=
+com&gt;</a><br><b>Subject: </b>Please welcome Valentin Marmin to the enginee=
+ring team</span><o:p></o:p></p></div><div><p class=3DMsoNormal>&nbsp;<o:p></o:=
+p></p></div><p>Hi Everyone,<o:p></o:p></p><p>I am pleased to announce that V=
+alentin Marmin has agreed to join our team as Automation Engineer. Valentin =
+earned his Master's degree in Engineering at the National Institute of Appli=
+ed Science (INSA of Rennes) in Industrial Informatics. Valentin has five yea=
+rs of experience in Software development, QA engineering and Test developmen=
+t. Valentin's knowledge of Python and Pytest will be a nice addition to our =
+current team.<o:p></o:p></p><p>Valentin will be responsible for helping us d=
+esign and implement the Automated Test Framework (ATF) and feed the framewor=
+k with well crafted and organized tests.<o:p></o:p></p><p>After moving from =
+France to Montreal for 2 weeks, Valentin braved the cold Canadian winter and=
+ officially started on a bone chilling day, January 21st at -34C with wind c=
+hill. Another fun fact is the 21st of January is also the anniversary of Que=
+bec's province flag that displays french heritage.<o:p></o:p></p><p><img bor=
+der=3D0 width=3D531 height=3D251 style=3D'width:5.5312in;height:2.6145in' id=3D"_x0000=
+_i1025" src=3D"cid:image003.jpg@01D4B1F7.29C0B2C0" alt=3D"cid:part1.6F2098DC.A07=
+2C6A4@xiplink.com"><o:p></o:p></p><p>Valentin's contact information can be f=
+ound below:<o:p></o:p></p><p>Email: <a href=3D"mailto:vmarmin@xiplink.com">vma=
+rmin@xiplink.com</a><o:p></o:p></p><p>Skype: valentin.marmin<o:p></o:p></p><=
+p>Please join me to give a warm welcome to Valentin.<o:p></o:p></p><p>Best r=
+egards,<o:p></o:p></p><pre>-- <o:p></o:p></pre><pre>Karim Fodil-Lemelin<o:p>=
+</o:p></pre><pre>Vice President of Engineering<o:p></o:p></pre><pre>&nbsp;<o=
+:p></o:p></pre><pre>XipLink Inc. <a href=3D"http://www.xiplink.com">www.xiplin=
+k.com</a><o:p></o:p></pre><pre>(514) 848-9640 x223<o:p></o:p></pre><pre>(514=
+) 848-9644 fax<o:p></o:p></pre></div></div></body></html>
+
+--B_3630996382_767352496--
+
+

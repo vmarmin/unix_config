@@ -1,0 +1,101 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <mergebot@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director9.mail.iad3b.rsapps.net ([172.30.191.6])
+	by backend33.mail.iad3b.rsapps.net with LMTP id oAomIPj9a1zaegAApu/jSQ
+	for <vmarmin@xiplink.com>; Tue, 19 Feb 2019 08:00:40 -0500
+Received: from proxy11.mail.ord1d.rsapps.net ([172.30.191.6])
+	by director9.mail.iad3b.rsapps.net with LMTP id mOkaHfj9a1xAfgAAbC0CoQ
+	; Tue, 19 Feb 2019 08:00:40 -0500
+Received: from smtp37.gate.ord1c ([172.30.191.6])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy11.mail.ord1d.rsapps.net with LMTP id WAgRFvj9a1wUYwAAgKDEHA
+	; Tue, 19 Feb 2019 08:00:40 -0500
+Return-Path: <mergebot@xiplink.com>
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: devs@xiplink.com
+X-Originating-Ip: [192.252.130.194]
+Authentication-Results: smtp37.gate.ord1c.rsapps.net; iprev=pass policy.iprev="192.252.130.194"; spf=permerror smtp.mailfrom="mergebot@xiplink.com" smtp.helo="cubert.xiplink.com"; dkim=none (message not signed) header.d=none; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: 5b3d1a10-3446-11e9-aef2-525400e8d833-1-1
+Received: from [192.252.130.194] ([192.252.130.194:22004] helo=cubert.xiplink.com)
+	by smtp37.gate.ord1c.rsapps.net (envelope-from <mergebot@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTP
+	id AF/47-21840-7FDFB6C5; Tue, 19 Feb 2019 08:00:39 -0500
+Date: Tue, 19 Feb 2019 08:00:39 -0500
+Received: from gaia.xiplink.com (gaia.xiplink.com [10.10.0.111])
+	by cubert.xiplink.com (Postfix) with ESMTP id E5E92A2487
+	for <devs@xiplink.com>; Tue, 19 Feb 2019 08:00:38 -0500 (EST)
+Message-ID: <AF.47.21840.7FDFB6C5@smtp37.gate.ord1c.rsapps.net>
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: MergeBot stable/9 merge: 1 new commits
+From: FreeBSD Mergebot <mergebot@xiplink.com>
+To: devs@xiplink.com
+Reply-to: devs@xiplink.com
+
+<html>
+  <head>
+    <style type="text/css">
+      body { background-color: #FFFFFF; }
+      .success { color: green; }
+      .error { color: red; }
+      #Notable pre { color: blue; }
+      #Error h1 { color: red; }
+      #Error h2 { color: red; }
+      #Error h3 { color: red; }
+      #Error h4 { color: red; }
+      #Error h5 { color: red; }
+      #Log { font-family: courier; font-size: 8pt; }
+    </style>
+  </head>
+  <body>
+
+<h2>Merged 1 commits from stable/9 into 5.13</h2>
+<pre> freebsd/usr.sbin/bluetooth/sdpd/ssar.c | 128 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 127 insertions(+), 1 deletion(-)</pre>
+<hr/><h3>MergeBot Log</h3>
+<div id="Log">
+&gt; git rev-parse --show-toplevel<br/>
+&gt; git checkout -f 'HEAD@{0}'<br/>
+&gt; git reset --hard HEAD<br/>
+&gt; git merge --abort<br/>
+Fetching XipLink updates ...<br/>
+&gt; git fetch --quiet origin<br/>
+&gt; git fetch --quiet origin +refs/mergebot/FreeBSD/stable/9:refs/mergebot/FreeBSD/stable/9<br/>
+&gt; git show --summary --pretty=format:%B refs/mergebot/FreeBSD/stable/9<br/>
+&gt; git remote show FreeBSD<br/>
+Fetching FreeBSD updates ...<br/>
+&gt; git fetch --quiet FreeBSD<br/>
+&gt; git rev-list --reverse d307602705a9e936bcaca7b5bedae2150ec3a21d..FreeBSD/stable/9<br/>
+Checking out 5.13 ...<br/>
+&gt; git checkout -f origin/5.13<br/>
+Checking commit e628eabd4 for conflicts (1/1) ...<br/>
+&gt; git format-patch -p --stdout 'e628eabd4635b5172731ac5411b84bb83de37653~..e628eabd4635b5172731ac5411b84bb83de37653'<br/>
+&gt; git apply --3way --whitespace=nowarn --directory freebsd /usr/home/mergebot/XipOS9/tmpRCaOTd-0.patch<br/>
+&gt; git diff --stat 'e628eabd4635b5172731ac5411b84bb83de37653~..e628eabd4635b5172731ac5411b84bb83de37653'<br/>
+Squashing 1 new FreeBSD commits onto FBSD_9_Import ...<br/>
+&gt; git checkout -f origin/FBSD_9_Import<br/>
+&gt; git merge --allow-unrelated-histories --squash -s subtree --no-commit FreeBSD/stable/9<br/>
+&gt; git log --reverse d307602705a9e936bcaca7b5bedae2150ec3a21d..FreeBSD/stable/9<br/>
+&gt; git commit -m ...<br/>
+Checking out 5.13 ...<br/>
+&gt; git checkout origin/5.13<br/>
+Merging FreeBSD updates into 5.13 ...<br/>
+&gt; git merge -m ... '@{1}'<br/>
+&gt; git update-ref refs/mergebot/FreeBSD/stable/9 HEAD<br/>
+Pushing updated FBSD_9_Import branch to origin<br/>
+&gt; git push origin 'HEAD^2:FBSD_9_Import'<br/>
+Pushing updated 5.13 branch to origin<br/>
+&gt; git push origin HEAD:5.13<br/>
+&gt; git push origin +HEAD:refs/mergebot/FreeBSD/stable/9<br/>
+Done!<br/>
+&gt; git diff --stat=200 'HEAD^'
+</div>
+
+  </body>
+</html>

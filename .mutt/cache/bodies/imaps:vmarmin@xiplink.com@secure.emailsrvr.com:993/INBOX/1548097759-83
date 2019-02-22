@@ -1,0 +1,113 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <marcnarc@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director8.mail.iad3b.rsapps.net ([172.31.255.6])
+	by backend33.mail.iad3b.rsapps.net with LMTP id cO7LL8LMalyNdgAApu/jSQ
+	for <vmarmin@xiplink.com>; Mon, 18 Feb 2019 10:18:26 -0500
+Received: from proxy11.mail.iad3b.rsapps.net ([172.31.255.6])
+	by director8.mail.iad3b.rsapps.net with LMTP id oLKqL8LMalyjSAAA3Xo4kQ
+	; Mon, 18 Feb 2019 10:18:26 -0500
+Received: from smtp6.gate.iad3b ([172.31.255.6])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy11.mail.iad3b.rsapps.net with LMTP id OIZTL8LMalw3HwAARNREpw
+	; Mon, 18 Feb 2019 10:18:26 -0500
+Return-Path: <marcnarc@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: devs@xiplink.com
+X-Originating-Ip: [146.20.161.65]
+Authentication-Results: smtp6.gate.iad3b.rsapps.net; iprev=pass policy.iprev="146.20.161.65"; spf=pass smtp.mailfrom="marcnarc@xiplink.com" smtp.helo="smtp65.iad3b.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: 7043246a-3390-11e9-9294-5254000d607e-1-1
+Received: from [146.20.161.65] ([146.20.161.65:42927] helo=smtp65.iad3b.emailsrvr.com)
+	by smtp6.gate.iad3b.rsapps.net (envelope-from <marcnarc@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id 3C/98-09316-2CCCA6C5; Mon, 18 Feb 2019 10:18:26 -0500
+Received: from smtp9.relay.iad3b.emailsrvr.com (localhost [127.0.0.1])
+	by smtp9.relay.iad3b.emailsrvr.com (SMTP Server) with ESMTP id 4E0F32015A
+	for <devs@xiplink.com>; Mon, 18 Feb 2019 10:18:26 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1550503106;
+	bh=XTyyZPYk+WK8DgBngcOurKKN7TAQTXLgaqWzQDUOBeM=;
+	h=Subject:From:To:Date:From;
+	b=rlElVr0UnMPAYdTxYI4K/DXMvlGHyGjrCnC1qhh/tE+hspFhacGZlUZFbJkFKRd/x
+	 7OlEb0amEror0HXYKkyuBjmxglzDz6CuSzsPGzFz5xwo++rkI8zwHTETSsELJfwLV2
+	 IZH6BMnXvB5vmaX7ArQ79E9UcasOB97eYD6EDsCE=
+X-Auth-ID: mbranchaud@xiplink.com
+Received: by smtp9.relay.iad3b.emailsrvr.com (Authenticated sender: mbranchaud-AT-xiplink.com) with ESMTPSA id 2384620235
+	for <devs@xiplink.com>; Mon, 18 Feb 2019 10:18:26 -0500 (EST)
+X-Sender-Id: mbranchaud@xiplink.com
+Received: from [10.10.1.32] ([UNAVAILABLE]. [192.252.130.194])
+	(using TLSv1.2 with cipher AES128-SHA)
+	by 0.0.0.0:465 (trex/5.7.12);
+	Mon, 18 Feb 2019 10:18:26 -0500
+Subject: Re: IETF starting to grapple with PEPs and transport encryption (e.g.
+ QUIC)
+From: Marc Branchaud <marcnarc@xiplink.com>
+To: 'devs' <devs@xiplink.com>
+References: <b51ed2c8-f4b0-6282-c137-8ac320749021@xiplink.com>
+Message-ID: <f22d6cc4-f75f-54b6-6271-5a75a89cd03b@xiplink.com>
+Date: Mon, 18 Feb 2019 10:18:25 -0500
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101
+ Thunderbird/60.4.0
+MIME-Version: 1.0
+In-Reply-To: <b51ed2c8-f4b0-6282-c137-8ac320749021@xiplink.com>
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Language: en-US
+Content-Transfer-Encoding: 8bit
+
+Via the EToSat list, two papers evaluating QUIC performance over satellite:
+
+Google QUIC performance over a public SATCOM access
+https://arxiv.org/pdf/1810.04970.pdf
+
+Satellite Internet Performance Measurements
+http://www7content.cs.fau.de/~deutschmann/NetSys2019_preprint.pdf
+
+Both conclude that PEPs are essential for good satellite performance, 
+handily beating QUIC, especially for large (several MB) transfers.
+
+(The second paper is only 4 pages and worth a quick look.  It 
+anonymously compares protocol performance among 3 satellite operators, 
+one of whom "shows more stable performance regarding delays, data rates 
+and page load times."  I wonder which operator that is, and if we're 
+embedded with them! :) )
+
+		M.
+
+
+On 2019-02-12 10:50 a.m., Marc Branchaud wrote:
+> The IETF set up a mailing list last year to discuss optimizing encrypted 
+> transports over satellite links:
+> 
+> https://www.ietf.org/mailman/listinfo/etosat
+> Modern geosynchronous satellite networks are characterized by relatively 
+> long latency but high bandwidth paths. For TCP, Performance Enhancing 
+> Proxies (PEPs) are used to hide the impact of latency on TCP performance.
+> With PEP, TCP connection throughput of greater than 200 Mbps is state of 
+> the art over satellite Internet access services. Transports such as QUIC 
+> which cryptographically protect transport headers (intentionally) 
+> prevent PEP techniques from being applied (for good reasons). The 
+> purpose of this discussion list is to explore ideas for getting the 
+> performance of transports such as QUIC on par with PEP-ed TCP 
+> performance but without the use of a PEP equivalent.
+> 
+> Participation has been very low (only a couple dozen messages so far), 
+> but has recently picked up a bit.
+> 
+> Related stuff:
+> 
+> QUIC working group
+> https://datatracker.ietf.org/wg/quic/about/
+> "A UDP-based, stream-multiplexing, encrypted transport protocol"
+> 
+> NetWork Coding for Efficient Network Communications Research Group
+> https://irtf.org/nwcrg
+> 
+> Path Aware Networking Research Group
+> https://irtf.org/panrg
+> 
+>          M.

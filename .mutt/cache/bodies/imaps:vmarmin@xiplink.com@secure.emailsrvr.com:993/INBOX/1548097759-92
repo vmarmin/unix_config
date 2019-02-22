@@ -1,0 +1,88 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <kfodil-lemelin@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director10.mail.iad3b.rsapps.net ([172.31.255.6])
+	by backend33.mail.iad3b.rsapps.net with LMTP id 8DKVOP+0bly7JwAApu/jSQ
+	for <vmarmin@xiplink.com>; Thu, 21 Feb 2019 09:26:07 -0500
+Received: from proxy3.mail.iad3b.rsapps.net ([172.31.255.6])
+	by director10.mail.iad3b.rsapps.net with LMTP id IOdMOP+0blw4EgAA+q2Skg
+	; Thu, 21 Feb 2019 09:26:07 -0500
+Received: from smtp25.gate.iad3b ([172.31.255.6])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy3.mail.iad3b.rsapps.net with LMTP id 4PoFOP+0blwYZQAAM8Wetg
+	; Thu, 21 Feb 2019 09:26:07 -0500
+Return-Path: <kfodil-lemelin@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: devs@xiplink.com
+X-Originating-Ip: [146.20.161.121]
+Authentication-Results: smtp25.gate.iad3b.rsapps.net; iprev=pass policy.iprev="146.20.161.121"; spf=pass smtp.mailfrom="kfodil-lemelin@xiplink.com" smtp.helo="smtp121.iad3b.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: a0a3f55c-35e4-11e9-bc96-52540030a522-1-1
+Received: from [146.20.161.121] ([146.20.161.121:37545] helo=smtp121.iad3b.emailsrvr.com)
+	by smtp25.gate.iad3b.rsapps.net (envelope-from <kfodil-lemelin@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id A9/7B-20219-FF4BE6C5; Thu, 21 Feb 2019 09:26:07 -0500
+Received: from smtp16.relay.iad3b.emailsrvr.com (localhost [127.0.0.1])
+	by smtp16.relay.iad3b.emailsrvr.com (SMTP Server) with ESMTP id 83A51C02E2
+	for <devs@xiplink.com>; Thu, 21 Feb 2019 09:26:07 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1550759167;
+	bh=X+HA3HgHkqGIrBqyq/17y21PjWoT+XHsYUV7B5eYXKI=;
+	h=From:Date:Subject:To:From;
+	b=c39yu2JO2jNack1uFhxqRBJE5UmIbbntkTtyVKnTiO2J0F/1Tq9EEHipnxYYY4ry/
+	 WkAWbL/rb2b2jdH71quE9tNAIincnJ41DI6QzJxUFTW80bju9oOrKdBGjLmUO/ubpd
+	 Z1DtaWKAPAOcsNR50jeuj0sMJLbgXMaMvO01kM5M=
+X-Auth-ID: kfodil-lemelin@xiplink.com
+Received: by smtp16.relay.iad3b.emailsrvr.com (Authenticated sender: kfodil-lemelin-AT-xiplink.com) with ESMTPSA id 04644C02DA
+	for <devs@xiplink.com>; Thu, 21 Feb 2019 09:26:06 -0500 (EST)
+X-Sender-Id: kfodil-lemelin@xiplink.com
+Received: from [100.89.163.109] ([UNAVAILABLE]. [204.48.95.109])
+	(using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384)
+	by 0.0.0.0:465 (trex/5.7.12);
+	Thu, 21 Feb 2019 09:26:07 -0500
+From: Karim Fodil-Lemelin <kfodil-lemelin@xiplink.com>
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0 (1.0)
+Date: Thu, 21 Feb 2019 09:26:05 -0500
+Subject: Re: Your Invited!
+Message-Id: <8BE8985B-CFBE-4017-9E58-9CD58D97FA31@xiplink.com>
+References: <084080b3-cb5f-0403-5290-110605b69b40@xiplink.com>
+In-Reply-To: <084080b3-cb5f-0403-5290-110605b69b40@xiplink.com>
+To: devs <devs@xiplink.com>
+X-Mailer: iPhone Mail (16C101)
+
+So far I got only one response. Please make sure to let me know if you=E2=80=
+=99re in.
+
+Envoy=C3=A9 de mon iPhone
+
+> Le 18 f=C3=A9vr. 2019 =C3=A0 15:07, Karim Fodil-Lemelin <kfodil-lemelin@xi=
+plink.com> a =C3=A9crit :
+>=20
+> Hi Devs,
+>=20
+> Please take a minute to look at this year's conference
+> https://www.bsdcan.org/2019/. Let me know if you are interested to go.
+> The conference is in Ottawa on Friday and Saturday the 17-18 of May.
+>=20
+> We would like to book the conference/hotel this week so please let me
+> know as soon as possible if your going.
+>=20
+> Best,
+>=20
+> --=20
+> Karim Fodil-Lemelin
+> Vice President of Engineering
+>=20
+> XipLink Inc. www.xiplink.com
+> (514) 848-9640 x223
+> (514) 848-9644 fax
+>=20
+>=20
+

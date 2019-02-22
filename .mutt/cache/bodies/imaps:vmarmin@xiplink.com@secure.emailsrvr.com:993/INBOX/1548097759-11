@@ -1,0 +1,63 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <akenny@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director11.mail.iad3b.rsapps.net ([172.28.255.1])
+	by backend33.mail.iad3b.rsapps.net with LMTP id 6N4UASwhR1z0CwAApu/jSQ
+	for <vmarmin@xiplink.com>; Tue, 22 Jan 2019 08:57:00 -0500
+Received: from director6.mail.ord1c.rsapps.net ([172.28.255.1])
+	by director11.mail.iad3b.rsapps.net with LMTP id 2PMrOishR1wuRwAAfb0P8w
+	; Tue, 22 Jan 2019 08:57:00 -0500
+Received: from smtp33.gate.ord1c ([172.28.255.1])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by director6.mail.ord1c.rsapps.net with LMTP id GPGoNCshR1yyRAAA5akwjA
+	; Tue, 22 Jan 2019 08:56:59 -0500
+Return-Path: <akenny@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: devs@xiplink.com
+X-Originating-Ip: [108.166.43.65]
+Authentication-Results: smtp33.gate.ord1c.rsapps.net; iprev=pass policy.iprev="108.166.43.65"; spf=pass smtp.mailfrom="akenny@xiplink.com" smtp.helo="smtp65.ord1c.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: 9619ddee-1e4d-11e9-a2c3-54520067fec4-1-1
+Received: from [108.166.43.65] ([108.166.43.65:47264] helo=smtp65.ord1c.emailsrvr.com)
+	by smtp33.gate.ord1c.rsapps.net (envelope-from <akenny@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id AA/D0-31944-B21274C5; Tue, 22 Jan 2019 08:56:59 -0500
+Received: from smtp25.relay.ord1c.emailsrvr.com (localhost [127.0.0.1])
+	by smtp25.relay.ord1c.emailsrvr.com (SMTP Server) with ESMTP id 195A7203FB
+	for <devs@xiplink.com>; Tue, 22 Jan 2019 08:56:59 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1548165419;
+	bh=35r5/p0ifzOd7rHhY3ZsrwxLYCONplSXY1s/hNeHFzo=;
+	h=Date:Subject:From:To:From;
+	b=RTIsKCMdbNjIYMxWkViNGFW4ZmyvHK1TY8/AzUy5l/oXTty4Rr92MSbQgAtTJmx/X
+	 toT9d8J6CsWH27cEZYqqi13AIwVwPxnLvCZfnad+yzbew8XWl/wRiA0r8DrrgU3bR5
+	 FrkG6Hz9hMOyo9iN5IQrDHtLQySc9VXEYVBxnZu0=
+X-Auth-ID: akenny@xiplink.com
+Received: by smtp25.relay.ord1c.emailsrvr.com (Authenticated sender: akenny-AT-xiplink.com) with ESMTPSA id 51CAC203E0
+	for <devs@xiplink.com>; Tue, 22 Jan 2019 08:56:58 -0500 (EST)
+X-Sender-Id: akenny@xiplink.com
+Received: from [10.46.11.6] ([TEMPUNAVAIL]. [172.83.40.22])
+	(using TLSv1.2 with cipher AES128-GCM-SHA256)
+	by 0.0.0.0:465 (trex/5.7.12);
+	Tue, 22 Jan 2019 08:56:59 -0500
+Date: Tue, 22 Jan 2019 08:56:53 -0500
+Subject: In after lunch
+Message-ID: <8b03101f-3465-4b56-8115-6f6bcb863555@email.android.com>
+X-Android-Message-ID: <8b03101f-3465-4b56-8115-6f6bcb863555@email.android.com>
+From: Al Kenny <akenny@xiplink.com>
+To: devs@xiplink.com
+Importance: Normal
+X-Priority: 3
+X-MSMail-Priority: Normal
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9J2F1dG8nPlByZXR0eSB0dWNrZXJlZCBvdXQgZnJvbSB0aGUgZmxpZ2h0IHN0aWxs
+LCBzbyBJJ20gaGVhZGVkIGJhY2sgdG8gYmVkIGFuZCBJJ2xsIGJlIGluIGFmdGVyIGx1bmNoLjxk
+aXYgZGlyPSJhdXRvIj48YnI+PC9kaXY+PGRpdiBkaXI9ImF1dG8iPi0gQWw8L2Rpdj48L2Rpdj4=
+

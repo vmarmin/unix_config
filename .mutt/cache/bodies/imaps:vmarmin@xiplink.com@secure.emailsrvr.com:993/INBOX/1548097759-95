@@ -1,0 +1,155 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <valou-whk@hotmail.fr>
+Delivered-To: vmarmin@xiplink.com
+Received: from director8.mail.iad3b.rsapps.net ([172.30.191.6])
+	by backend33.mail.iad3b.rsapps.net with LMTP id yJVhNlf5bly3MgAApu/jSQ
+	for <vmarmin@xiplink.com>; Thu, 21 Feb 2019 14:17:43 -0500
+Received: from proxy6.mail.ord1d.rsapps.net ([172.30.191.6])
+	by director8.mail.iad3b.rsapps.net with LMTP id 2EvuM1f5blxyFwAA3Xo4kQ
+	; Thu, 21 Feb 2019 14:17:43 -0500
+Received: from smtp35.gate.ord1d ([172.30.191.6])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy6.mail.ord1d.rsapps.net with LMTP id QC26LVf5blzTPwAAQyIf0w
+	; Thu, 21 Feb 2019 14:17:43 -0500
+Return-Path: <valou-whk@hotmail.fr>
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+Authentication-Results:  smtp35.gate.ord1d.rsapps.net x-tls.subject="/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=mail.protection.outlook.com"; auth=pass (cipher=AES256-SHA256)
+X-Virus-Scanned: OK
+X-Orig-To: vmarmin@xiplink.com
+X-Originating-Ip: [40.92.67.27]
+Authentication-Results: smtp35.gate.ord1d.rsapps.net; iprev=pass policy.iprev="40.92.67.27"; spf=pass smtp.mailfrom="valou-whk@hotmail.fr" smtp.helo="eur02-am5-obe.outbound.protection.outlook.com"; dkim=none (message not signed) header.d=none; dmarc=pass (p=none; dis=none) header.from=hotmail.fr
+X-Suspicious-Flag: NO
+X-Classification-ID: 5c0b831e-360d-11e9-a0b8-525400a7b7b4-1-1
+Received: from [40.92.67.27] ([40.92.67.27:6233] helo=EUR02-AM5-obe.outbound.protection.outlook.com)
+	by smtp35.gate.ord1d.rsapps.net (envelope-from <valou-whk@hotmail.fr>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=AES256-SHA256
+	subject="/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=mail.protection.outlook.com") 
+	id 34/8C-22169-659FE6C5; Thu, 21 Feb 2019 14:17:43 -0500
+Received: from VE1EUR02FT028.eop-EUR02.prod.protection.outlook.com
+ (10.152.12.51) by VE1EUR02HT127.eop-EUR02.prod.protection.outlook.com
+ (10.152.13.100) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.1580.10; Thu, 21 Feb
+ 2019 19:17:41 +0000
+Received: from DB7PR02MB5241.eurprd02.prod.outlook.com (10.152.12.53) by
+ VE1EUR02FT028.mail.protection.outlook.com (10.152.12.81) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.1580.10 via Frontend Transport; Thu, 21 Feb 2019 19:17:41 +0000
+Received: from DB7PR02MB5241.eurprd02.prod.outlook.com
+ ([fe80::59c1:449d:2b58:79d5]) by DB7PR02MB5241.eurprd02.prod.outlook.com
+ ([fe80::59c1:449d:2b58:79d5%3]) with mapi id 15.20.1643.014; Thu, 21 Feb 2019
+ 19:17:40 +0000
+From: Valentin MARMIN <valou-whk@hotmail.fr>
+To: Valentin Marmin <vmarmin@xiplink.com>
+Subject: Re: Validation fonctionnement mutt
+Thread-Topic: Validation fonctionnement mutt
+Thread-Index: AQHUyg18oFIyumq3+0utftrK9iU316XqoBwq
+Date: Thu, 21 Feb 2019 19:17:40 +0000
+Message-ID: <DB7PR02MB524191D0C281D11ADDF2EA93827E0@DB7PR02MB5241.eurprd02.prod.outlook.com>
+References: <20190221174614.GA18437@vmarminpc>
+In-Reply-To: <20190221174614.GA18437@vmarminpc>
+Accept-Language: fr-FR, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker: OriginalChecksum:BE2DF48AC7A51775A0426DF33135174970F4D71E5FAD47A2D7A2F86BE3C40C4F;UpperCasedChecksum:17A5F5CB71AFAC06478A8833DF10734782F0E9073E65FA9F45C5AB974EDDB54A;SizeAsReceived:6728;Count:44
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [aibFpwMn2kSH6sOV6Y/AjRcSU5AbBDsV]
+x-ms-publictraffictype: Email
+x-incomingheadercount: 44
+x-eopattributedmessage: 0
+x-microsoft-antispam: BCL:0;PCL:0;RULEID:(2390118)(7020095)(201702061078)(5061506573)(5061507331)(1603103135)(2017031320274)(2017031322404)(2017031324274)(2017031323274)(1601125500)(1603101475)(1701031045);SRVR:VE1EUR02HT127;
+x-ms-traffictypediagnostic: VE1EUR02HT127:
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(4566010)(82015058);SRVR:VE1EUR02HT127;BCL:0;PCL:0;RULEID:;SRVR:VE1EUR02HT127;
+x-microsoft-antispam-message-info: UQwuZreyBFqBNoA2e065QAN6LJNNhfD+fIFkkzpWkTTiydLSKOXL50Knwb9HNtk+
+Content-Type: multipart/alternative;
+	boundary="_000_DB7PR02MB524191D0C281D11ADDF2EA93827E0DB7PR02MB5241eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: c001924d-3e68-4f40-89c2-901a49278da7
+X-MS-Exchange-CrossTenant-Network-Message-Id: 970d296b-f508-4409-19b7-08d698313fc0
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: c001924d-3e68-4f40-89c2-901a49278da7
+X-MS-Exchange-CrossTenant-originalarrivaltime: 21 Feb 2019 19:17:40.9367
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VE1EUR02HT127
+
+--_000_DB7PR02MB524191D0C281D11ADDF2EA93827E0DB7PR02MB5241eurp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Ah oui, ?a marche bien !!
+
+Val
+
+Get Outlook for Android<https://aka.ms/ghei36>
+
+________________________________
+From: Valentin Marmin <vmarmin@xiplink.com>
+Sent: Thursday, February 21, 2019 12:46:14 PM
+To: valou-whk@hotmail.fr
+Subject: Validation fonctionnement mutt
+
+Val,
+
+Voici un mail pour verifier le bon fonctionnement de mutt.
+Super outil de mail en ligne de commande.
+
+Peace.
+
+--_000_DB7PR02MB524191D0C281D11ADDF2EA93827E0DB7PR02MB5241eurp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Exchange Server">
+<!-- converted from text --><style><!-- .EmailQuote { margin-left: 1pt; pad=
+ding-left: 4pt; border-left: #800000 2px solid; } --></style>
+</head>
+<body>
+<div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black">
+Ah oui, &ccedil;a marche bien !!<br>
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black">
+Val<br>
+<br>
+</div>
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black">
+<div dir=3D"auto" style=3D"direction:ltr; margin:0; padding:0; font-family:=
+sans-serif; font-size:11pt; color:black">
+Get <a href=3D"https://aka.ms/ghei36">Outlook for Android</a></div>
+<br>
+</div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" =
+color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> Valentin Marmin &lt=
+;vmarmin@xiplink.com&gt;<br>
+<b>Sent:</b> Thursday, February 21, 2019 12:46:14 PM<br>
+<b>To:</b> valou-whk@hotmail.fr<br>
+<b>Subject:</b> Validation fonctionnement mutt</font>
+<div>&nbsp;</div>
+</div>
+</div>
+<font size=3D"2"><span style=3D"font-size:11pt;">
+<div class=3D"PlainText">Val,<br>
+<br>
+Voici un mail pour verifier le bon fonctionnement de mutt.<br>
+Super outil de mail en ligne de commande.<br>
+<br>
+Peace.<br>
+</div>
+</span></font>
+</body>
+</html>
+
+--_000_DB7PR02MB524191D0C281D11ADDF2EA93827E0DB7PR02MB5241eurp_--

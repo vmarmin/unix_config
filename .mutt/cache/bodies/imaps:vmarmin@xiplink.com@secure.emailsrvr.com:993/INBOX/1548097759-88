@@ -1,0 +1,98 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <akenny@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director10.mail.iad3b.rsapps.net ([172.27.255.51])
+	by backend33.mail.iad3b.rsapps.net with LMTP id eH/GD/VXbVxlJAAApu/jSQ
+	for <vmarmin@xiplink.com>; Wed, 20 Feb 2019 08:36:53 -0500
+Received: from proxy11.mail.iad3a.rsapps.net ([172.27.255.51])
+	by director10.mail.iad3b.rsapps.net with LMTP id +D2ID/VXbVwEMAAA+q2Skg
+	; Wed, 20 Feb 2019 08:36:53 -0500
+Received: from smtp8.gate.iad3a ([172.27.255.51])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy11.mail.iad3a.rsapps.net with LMTP id kDwbDvVXbVz3JAAAxCvdqw
+	; Wed, 20 Feb 2019 08:36:53 -0500
+Return-Path: <akenny@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: montreal@xiplink.com
+X-Originating-Ip: [173.203.187.64]
+Authentication-Results: smtp8.gate.iad3a.rsapps.net; iprev=pass policy.iprev="173.203.187.64"; spf=pass smtp.mailfrom="akenny@xiplink.com" smtp.helo="smtp64.iad3a.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: 94fa48d0-3514-11e9-82af-525400b8fe03-1-1
+Received: from [173.203.187.64] ([173.203.187.64:53374] helo=smtp64.iad3a.emailsrvr.com)
+	by smtp8.gate.iad3a.rsapps.net (envelope-from <akenny@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id 06/0B-09201-4F75D6C5; Wed, 20 Feb 2019 08:36:52 -0500
+Received: from smtp17.relay.iad3a.emailsrvr.com (localhost [127.0.0.1])
+	by smtp17.relay.iad3a.emailsrvr.com (SMTP Server) with ESMTP id 9EA312555D
+	for <montreal@xiplink.com>; Wed, 20 Feb 2019 08:36:52 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1550669812;
+	bh=wwuXf4X0OpGWh+4NoNtt6quUlluaM7Au6yJlGhnZTxM=;
+	h=Date:Subject:From:To:From;
+	b=GHYKiS7C+8kBHOhF30WeWDdQllyOYXmJS3n9y/DSZ7WwtdqaMkW90Tm6az6C6DKL/
+	 wvYpft4gQ+F6tFTAY0bDPQ2NhOKSJ6Ug9qhrcIGJZ7NSDlD2QnV9F9g4fnvFWk3XLI
+	 hhhjZSvj/S5LbULWJVaaZm1jPtK7zBQTy/Oiw/D4=
+Received: from app37.wa-webapps.iad3a (relay-webapps.rsapps.net [172.27.255.140])
+	by smtp17.relay.iad3a.emailsrvr.com (SMTP Server) with ESMTP id 81EE32108B
+	for <montreal@xiplink.com>; Wed, 20 Feb 2019 08:36:52 -0500 (EST)
+X-Sender-Id: akenny@xiplink.com
+Received: from app37.wa-webapps.iad3a (relay-webapps.rsapps.net [172.27.255.140])
+	by 0.0.0.0:25 (trex/5.7.12);
+	Wed, 20 Feb 2019 08:36:52 -0500
+Received: from xiplink.com (localhost.localdomain [127.0.0.1])
+	by app37.wa-webapps.iad3a (Postfix) with ESMTP id 2EA536004A
+	for <montreal@xiplink.com>; Wed, 20 Feb 2019 08:36:45 -0500 (EST)
+Received: by apps.rackspace.com
+    (Authenticated sender: akenny@xiplink.com, from: akenny@xiplink.com) 
+    with HTTP; Wed, 20 Feb 2019 08:36:45 -0500 (EST)
+X-Auth-ID: akenny@xiplink.com
+Date: Wed, 20 Feb 2019 08:36:45 -0500 (EST)
+Subject: All your leftovers are belong to me
+From: "akenny@xiplink.com" <akenny@xiplink.com>
+To: montreal@xiplink.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;boundary="----=_20190220083645000000_52425"
+Importance: Normal
+X-Priority: 3 (Normal)
+X-Type: html
+Message-ID: <1550669805.189123224@apps.rackspace.com>
+X-Mailer: webmail/16.2.0-RC
+
+------=_20190220083645000000_52425
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=0AHey guys,=0A =0AI've noticed that we sometimes end up throwing some food=
+ away when we order lunch. If you don't have any room left in your stomach,=
+ I'll be happy to eat the leftovers. Just put the extra food in the fridge =
+and let me know it's there. It'll reduce the waste we create and give me an=
+ easy dinner (or second lunch, as is often the case).=0A =0ACheers,=0AAl=0A
+------=_20190220083645000000_52425
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"georgia" size=3D"3"><p style=3D"margin:0;padding:0;margin: 0;=
+ padding: 0; font-family: georgia; font-size: 12pt; overflow-wrap: break-wo=
+rd;">Hey guys,</p>=0A<p style=3D"margin:0;padding:0;margin: 0; padding: 0; =
+font-family: georgia; font-size: 12pt; overflow-wrap: break-word;">&nbsp;</=
+p>=0A<p style=3D"margin:0;padding:0;margin: 0; padding: 0; font-family: geo=
+rgia; font-size: 12pt; overflow-wrap: break-word;">I've noticed that we som=
+etimes end up throwing some food away when we order lunch. If you don't hav=
+e any room left in your stomach, I'll be happy to eat the leftovers. Just p=
+ut the extra food in the fridge and let me know it's there. It'll reduce th=
+e waste we create and give me an easy dinner (or second lunch, as is often =
+the case).</p>=0A<p style=3D"margin:0;padding:0;margin: 0; padding: 0; font=
+-family: georgia; font-size: 12pt; overflow-wrap: break-word;">&nbsp;</p>=
+=0A<p style=3D"margin:0;padding:0;margin: 0; padding: 0; font-family: georg=
+ia; font-size: 12pt; overflow-wrap: break-word;">Cheers,</p>=0A<p style=3D"=
+margin:0;padding:0;margin: 0; padding: 0; font-family: georgia; font-size: =
+12pt; overflow-wrap: break-word;">Al</p>=0A<p style=3D"margin:0;padding:0;f=
+ont-family: georgia; font-size: 12pt; overflow-wrap: break-word;"><span sty=
+le=3D"font-family: georgia; font-size: medium;"><!--WM_COMPOSE_SIGNATURE_ST=
+ART--><!--WM_COMPOSE_SIGNATURE_END--></span></p></font>
+------=_20190220083645000000_52425--
+

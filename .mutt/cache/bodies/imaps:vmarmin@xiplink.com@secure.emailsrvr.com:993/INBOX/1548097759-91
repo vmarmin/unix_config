@@ -1,0 +1,67 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <kfodil-lemelin@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director12.mail.iad3b.rsapps.net ([172.28.255.1])
+	by backend33.mail.iad3b.rsapps.net with LMTP id GI5LJ2Kxblx4DgAApu/jSQ
+	for <vmarmin@xiplink.com>; Thu, 21 Feb 2019 09:10:42 -0500
+Received: from director8.mail.ord1c.rsapps.net ([172.28.255.1])
+	by director12.mail.iad3b.rsapps.net with LMTP id IBG+JGKxblwNCwAANvxIog
+	; Thu, 21 Feb 2019 09:10:42 -0500
+Received: from smtp21.gate.ord1c ([172.28.255.1])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by director8.mail.ord1c.rsapps.net with LMTP id 0FsCJ2Kxblx2NQAAPBwpBw
+	; Thu, 21 Feb 2019 09:10:42 -0500
+Return-Path: <kfodil-lemelin@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: montreal@xiplink.com
+X-Originating-Ip: [108.166.43.64]
+Authentication-Results: smtp21.gate.ord1c.rsapps.net; iprev=pass policy.iprev="108.166.43.64"; spf=pass smtp.mailfrom="kfodil-lemelin@xiplink.com" smtp.helo="smtp64.ord1c.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: 78f800ea-35e2-11e9-a71e-a0369f0d8808-1-1
+Received: from [108.166.43.64] ([108.166.43.64:51814] helo=smtp64.ord1c.emailsrvr.com)
+	by smtp21.gate.ord1c.rsapps.net (envelope-from <kfodil-lemelin@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id 83/92-16141-161BE6C5; Thu, 21 Feb 2019 09:10:42 -0500
+Received: from smtp1.relay.ord1c.emailsrvr.com (localhost [127.0.0.1])
+	by smtp1.relay.ord1c.emailsrvr.com (SMTP Server) with ESMTP id F0C12202F4
+	for <montreal@xiplink.com>; Thu, 21 Feb 2019 09:10:41 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1550758241;
+	bh=DOSaMz8lwuZRQrh+IMiafyhXnSusbFnbJOn5vH8SMig=;
+	h=From:Date:Subject:To:From;
+	b=ozdQLJLeknKG8e04qILK2/LpWEiyTZJMxHC4DxAfKBEjseXgim+czDRQXrgmbpnhJ
+	 J5fOdvd3fZzWdN/A+pnJgs0NGRgNR6BqUoPJ/TpJipEsQkEGkDvXsvpg8YRJbw8M2g
+	 K1LgmD//vd9R2VYzR0NmVu1uMaT93lqE/IWxcHgo=
+X-Auth-ID: kfodil-lemelin@xiplink.com
+Received: by smtp1.relay.ord1c.emailsrvr.com (Authenticated sender: kfodil-lemelin-AT-xiplink.com) with ESMTPSA id AACAE20387
+	for <montreal@xiplink.com>; Thu, 21 Feb 2019 09:10:41 -0500 (EST)
+X-Sender-Id: kfodil-lemelin@xiplink.com
+Received: from [100.89.163.109] ([UNAVAILABLE]. [204.48.95.109])
+	(using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384)
+	by 0.0.0.0:465 (trex/5.7.12);
+	Thu, 21 Feb 2019 09:10:41 -0500
+From: Karim Fodil-Lemelin <kfodil-lemelin@xiplink.com>
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Mime-Version: 1.0 (1.0)
+Date: Thu, 21 Feb 2019 09:10:38 -0500
+Subject: Later in
+Message-Id: <58A3295E-B3A7-454A-9256-8C97F9E71E81@xiplink.com>
+To: montreal <montreal@xiplink.com>
+X-Mailer: iPhone Mail (16C101)
+
+Hi,
+
+I=E2=80=99m going to be delayed by about an hour this morning.
+
+Thanks,
+
+Karim=20
+
+Envoy=C3=A9 de mon iPhone=
+

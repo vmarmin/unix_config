@@ -1,0 +1,122 @@
+Delivered-To: vmarmin@xiplink.com
+Return-Path: <kfodil-lemelin@xiplink.com>
+Delivered-To: vmarmin@xiplink.com
+Received: from director9.mail.iad3b.rsapps.net ([172.31.255.6])
+	by backend33.mail.iad3b.rsapps.net with LMTP id yBD+I3kQa1x7CQAApu/jSQ
+	for <vmarmin@xiplink.com>; Mon, 18 Feb 2019 15:07:21 -0500
+Received: from proxy6.mail.iad3b.rsapps.net ([172.31.255.6])
+	by director9.mail.iad3b.rsapps.net with LMTP id oAHRI3kQa1zqcwAAbC0CoQ
+	; Mon, 18 Feb 2019 15:07:21 -0500
+Received: from smtp22.gate.iad3b ([172.31.255.6])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	by proxy6.mail.iad3b.rsapps.net with LMTP id 2CJGI3kQa1wcHQAARawThA
+	; Mon, 18 Feb 2019 15:07:21 -0500
+Return-Path: <kfodil-lemelin@xiplink.com>
+X-Spam-Exception: WHITELISTED
+X-Spam-Threshold: 95
+X-Spam-Score: 0
+X-Spam-Flag: NO
+X-Virus-Scanned: OK
+X-Orig-To: devs@xiplink.com
+X-Originating-Ip: [146.20.161.121]
+Authentication-Results: smtp22.gate.iad3b.rsapps.net; iprev=pass policy.iprev="146.20.161.121"; spf=pass smtp.mailfrom="kfodil-lemelin@xiplink.com" smtp.helo="smtp121.iad3b.emailsrvr.com"; dkim=pass header.d=xiplink.com; dmarc=none (p=nil; dis=none) header.from=xiplink.com
+X-Suspicious-Flag: NO
+X-Classification-ID: cc89c634-33b8-11e9-8f08-52540041dff8-1-1
+Received: from [146.20.161.121] ([146.20.161.121:36515] helo=smtp121.iad3b.emailsrvr.com)
+	by smtp22.gate.iad3b.rsapps.net (envelope-from <kfodil-lemelin@xiplink.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) 
+	id BE/B2-00545-9701B6C5; Mon, 18 Feb 2019 15:07:21 -0500
+Received: from smtp16.relay.iad3b.emailsrvr.com (localhost [127.0.0.1])
+	by smtp16.relay.iad3b.emailsrvr.com (SMTP Server) with ESMTP id F1C77C0223
+	for <devs@xiplink.com>; Mon, 18 Feb 2019 15:07:20 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=xiplink.com;
+	s=20181102-2c3qeqyt; t=1550520440;
+	bh=7wY+BeR4jpytaxRYNpRsM21MLojWqnYEppmcnhJ++rA=;
+	h=To:From:Subject:Date:From;
+	b=QiCwPtusz4AooIs92ViRoCg0GcOjw0Kgx0fmmPM7tmdQgF8hTM6MH5Z3T+sVik1be
+	 hu1bJdQshwVMprFg2eIxIhgdLFfzJCVt538RGoqy+EfqQCFNP/jepXaVeWKL6mxat7
+	 vwLLCG4saKOmM8mEqtNefjE7xXTppRqR6S5wG/ss=
+X-Auth-ID: kfodil-lemelin@xiplink.com
+Received: by smtp16.relay.iad3b.emailsrvr.com (Authenticated sender: kfodil-lemelin-AT-xiplink.com) with ESMTPSA id C6A68C0205
+	for <devs@xiplink.com>; Mon, 18 Feb 2019 15:07:20 -0500 (EST)
+X-Sender-Id: kfodil-lemelin@xiplink.com
+Received: from [10.10.1.98] ([UNAVAILABLE]. [192.252.130.194])
+	(using TLSv1.2 with cipher AES128-SHA)
+	by 0.0.0.0:465 (trex/5.7.12);
+	Mon, 18 Feb 2019 15:07:20 -0500
+To: devs <devs@xiplink.com>
+From: Karim Fodil-Lemelin <kfodil-lemelin@xiplink.com>
+Subject: Your Invited!
+Openpgp: preference=signencrypt
+Autocrypt: addr=kfodil-lemelin@xiplink.com; prefer-encrypt=mutual; keydata=
+ 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
+ BfU8UORn99Zi512Qjekei9pUUyoSTg==
+Message-ID: <084080b3-cb5f-0403-5290-110605b69b40@xiplink.com>
+Date: Mon, 18 Feb 2019 15:07:19 -0500
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:60.0) Gecko/20100101
+ Thunderbird/60.5.0
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Language: en-US
+
+Hi Devs,
+
+Please take a minute to look at this year's conference
+https://www.bsdcan.org/2019/. Let me know if you are interested to go.
+The conference is in Ottawa on Friday and Saturday the 17-18 of May.
+
+We would like to book the conference/hotel this week so please let me
+know as soon as possible if your going.
+
+Best,
+
+--=20
+Karim Fodil-Lemelin
+Vice President of Engineering
+
+XipLink Inc. www.xiplink.com
+(514) 848-9640 x223
+(514) 848-9644 fax
+
+
