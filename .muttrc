@@ -4,7 +4,7 @@ set realname = "Valentin Marmin"
 
 # My credentials
 set imap_user = "vmarmin@xiplink.com"
-set imap_pass = "Fenrir21"
+set imap_pass = "xxxxxxxxxxx"
 
 # My mailboxes
 set folder = "imaps://secure.emailsrvr.com:993"
