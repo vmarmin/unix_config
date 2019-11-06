@@ -17,6 +17,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim' 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'majutsushi/tagbar'
@@ -166,3 +168,6 @@ set relativenumber
 " disable wrap
 set textwidth=0
 set wrapmargin=0
+
+" vim airline theme
+let g:airline_theme='simple'
