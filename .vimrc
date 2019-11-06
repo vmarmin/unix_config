@@ -11,6 +11,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 "filesystem
 Plugin 'scrooloose/nerdtree'
+Plugin 'yggdroot/indentline'
 Plugin 'tpope/vim-surround'
 Plugin 'junegunn/fzf.vim'
 Plugin 'xuyuanp/nerdtree-git-plugin'
@@ -18,6 +19,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim' 
 Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'majutsushi/tagbar'
 
 " colorschemes
 Plugin 'flazz/vim-colorschemes'
@@ -63,6 +65,7 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 call togglebg#map("<F5>")
 colorscheme molokai
 "set guifont=Monaco:h14
+hi Normal guibg=NONE ctermbg=NONE
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
