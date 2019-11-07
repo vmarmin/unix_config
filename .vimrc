@@ -65,7 +65,7 @@ let mapleader=" "
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "
 call togglebg#map("<F5>")
-colorscheme molokai
+colorscheme monokain
 "set guifont=Monaco:h14
 hi Normal guibg=NONE ctermbg=NONE
 
