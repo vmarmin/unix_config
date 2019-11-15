@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/lightline.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdcommenter'
 
 " colorschemes
 Plugin 'flazz/vim-colorschemes'
