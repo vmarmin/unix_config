@@ -37,7 +37,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'alvan/vim-closetag'
 Plug 'Yggdroot/indentLine'
 Plug 'chrisbra/Colorizer'
-Plug 'heavenshell/vim-pydocstring'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Entertainment
@@ -77,7 +76,6 @@ set relativenumber
 set title
 
 """ Plugin Configurations
-
 
 " vim airline theme
 let g:airline_theme='simple'
