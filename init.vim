@@ -45,6 +45,13 @@ Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 """ Python3 VirtualEnv
+" sudo apt update
+" sudo apt install neovim python3 python3-pip git curl exuberant-ctags -y
+" python3 -m pip install virtualenv
+" python3 -m virtualenv -p python3 ~/.config/nvim/env
+" source ~/.config/nvim/env/bin/activate
+" pip install neovim==0.2.6 jedi psutil setproctitle yapf
+" deactivate
 let g:python3_host_prog = expand('~/.config/nvim/env/bin/python')
 
 """ Coloring
