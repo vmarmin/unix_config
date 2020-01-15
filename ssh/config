@@ -1,0 +1,159 @@
+Host gaia
+    HostName 10.10.0.111
+    ForwardX11 yes
+    User vmarmin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host blade
+    HostName 10.10.0.80
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test-blade
+    HostName 10.12.0.13
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test1-blade
+    HostName 10.12.0.17
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test2-blade
+    HostName 10.12.0.19
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test3-blade
+    HostName 10.12.0.21
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host rabih-blade
+    HostName 10.12.0.9
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host hs1-blade
+    HostName 10.12.0.170
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host hs2-blade
+    HostName 10.12.0.7
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host hs3-blade
+    HostName 10.12.0.15
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host gtpclient
+    HostName 10.10.1.216
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host rabih-stackman
+    HostName rabih-stackman
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host dev-stackman
+    HostName stackman
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host ubuntools
+    HostName 10.12.0.205
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test-stackman
+    HostName test-stackman
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test1-stackman
+    HostName 10.12.0.16
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test2-stackman
+    HostName 10.12.0.18
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test3-stackman
+    HostName 10.12.0.20
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host hs1-stackman
+    HostName 10.12.0.185
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host hs2-stackman
+    HostName 10.12.0.6
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host hs3-stackman
+    HostName 10.12.0.14
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host freebsd-val
+    HostName 10.10.1.151
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host 10.12.*
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    IdentityFile ~/.ssh/stackman
