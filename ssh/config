@@ -76,7 +76,7 @@ Host gtpclient
     UserKnownHostsFile /dev/null
 
 Host rabih-stackman
-    HostName rabih-stackman
+    HostName 10.12.0.8
     ForwardX11 yes
     User valentin
     StrictHostKeyChecking no
@@ -97,7 +97,7 @@ Host ubuntools
     UserKnownHostsFile /dev/null
 
 Host test-stackman
-    HostName test-stackman
+    HostName 10.12.0.12
     ForwardX11 yes
     User valentin
     StrictHostKeyChecking no
