@@ -1,22 +1,36 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:~/.local/bin
+# Add perl path
+export PATH=$PATH:/usr/local/lib/x86_64-linux-gnu/perl/5.26.1/
+# Add GO path
+export PATH=$PATH:/home/valentin/go/bin
+
+# Python startup
+export PYTHONSTARTUP=~/.pythonrc
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/developer/.oh-my-zsh
+  export ZSH="/home/valentin/.oh-my-zsh"
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="agnoster"
-#ZSH_THEME="gnzh"
-ZSH_THEME="perso"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+source ~/.fonts/*.sh
+ZSH_THEME='avit-custom'
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -44,17 +58,26 @@ ZSH_THEME="perso"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    k
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,53 +109,29 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias l='ls -l'
+alias vi='nvim'
+alias tcpdump='sudo tcpdump'
+alias lrt='ls -lrt'
+alias ge='gedit'
+alias ws='cd ~/Documents/workspace && pwd'
+alias shutter='shutter -s'
+alias getstackmanremote='sudo sshfs -o allow_other valentin@10.10.0.25:/home/stackman/Stackman /mnt/rem-stackman'
+alias yank='yank-cli'
+alias pip-upgrade="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+alias chrome='google-chrome'
+alias diff='colordiff'
+alias ssh-config='vi ~/.ssh/config'
+alias github='/opt/GitHub\ Desktop/github-desktop'
+alias randwp="feh --bg-fill --randomize /home/valentin/Pictures/wallpapers"
+alias i3config='vi ~/.config/i3/config'
 
+ydl () {
+    youtube-dl --extract-audio --no-playlist --audio-format mp3 $1
+}
 
-alias ls='ls -l --color=auto'
-alias ll='ls -al'
-alias lt='ls -alt'
+eval $(thefuck --alias)
 
-alias gitlg='git log --graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n""          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)" --all'
-alias firefox='~/00_Tools/firefox/firefox &'
+fortune -s
 
-## tmux
-alias tmux='tmux -2'
-# Tmux split vim like
-alias :vs='tmux split -h'
-alias :sp='tmux split -v'
-alias :q='tmux kill-pane'
-alias :new='tmux new-window'
-#alias tvim='tmux new-window -n vim vim'
-alias :vsp='tmux splitw -h -p '
-
-#alias Middleware
-alias cd_mw='cd ~/01_Middleware/mw-dev-tools/'
-alias cd_api='cd ~/01_Middleware/mw-dev-tools/work/sources/api-doc'
-alias cd_com='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-common'
-alias cd_cc='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-control-center'
-alias cd_edm='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-experiment-data-manager'
-alias cd_fica='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-fi-control-api'
-alias cd_gb='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-global-bus'
-alias cd_ifm='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-infrastructure-manager'
-alias cd_ldc='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-live-data-collector'
-alias cd_pr='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-program-runner'
-alias cd_rc='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-resource-collector'
-alias cd_trm='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-test-run-manager'
-alias cd_tu='cd ~/01_Middleware/mw-dev-tools/work/sources/mw-test-utils'
-
-alias so_mw_env='source ~/01_Middleware/mw-dev-tools/work/venv/bin/activate'
-alias run_cc='blsi_control_center -c blsi_config_1507105806809.json -i control_center'
-alias run_fi_api='blsi_fi_control_api -c blsi_config_1507105806809.json -i fi_control_api'
-
-alias run_mypy='mypy --ignore-missing-imports --disallow-untyped-defs blsi'
-alias run_pytest='pytest tests --ignore tests/func'
-alias run_pep8='pep8 ./blsi'
-
-alias run_mongo='sudo docker run --rm  --net blsi --ip 172.18.0.10 -p 27017:27017 -v /tmp/mongodb:/data/db  mongo:3.4.4 '
-alias run_influx='sudo docker run --rm --net blsi --ip 172.18.0.11 -p 8086:8086 -v /var/lib/influxdb:/var/lib/influxdb influxdb:latest /usr/bin/influxd'
-
-#tmux
-#echo 'Running tmux server : '
-#tmux ls
-
-so_mw_env
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
