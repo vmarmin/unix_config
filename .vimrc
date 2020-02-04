@@ -1,6 +1,6 @@
 "vundle
 set nocompatible
-filetype off
+filetype plugin on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -184,3 +184,6 @@ set tabstop=4                   " for proper display of files with tabs
 set shiftround                  " always round indents to multiple of shiftwidth
 set copyindent                  " use existing indents for new indents
 set preserveindent              " save as much indent structure as possible
+
+" Nerd commenter
+let g:NERDSpaceDelims = 1

@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:System San Francisco Display 8
+font pango:System San Francisco Display 6
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -30,7 +30,8 @@ font pango:System San Francisco Display 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
+set $terminal terminator
+bindsym $mod+Return exec $terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -92,14 +93,14 @@ bindsym $mod+a focus parent
 
 # Setting workspaces
 set $workspace1 "1 "
-set $workspace2 "2 "
+set $workspace2 "2"
 set $workspace3 "3 "
 set $workspace4 "4 "
 set $workspace5 "5 "
 set $workspace6 "6"
 set $workspace7 "7"
 set $workspace8 "8"
-set $workspace9 "9"
+set $workspace9 "9 "
 set $workspace10 "10 "
 
 
@@ -147,8 +148,10 @@ workspace $workspace10 output $rmon
 
 # App on specific workspace
 assign [class="Brave-browser"] $workspace5
-assign [class="Firefox"] $workspace2
+assign [class="Firefox"] $workspace9
 assign [class="Code"] $workspace3
+assign [class="Mailspring"] $workspace4
+assign [class="Slack"] $workspace4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -202,7 +205,7 @@ hide_edge_borders both
 # finds out, if available)
 bar {
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        position top
+        position bottom
         colors {
             background $bg-color
             separator #757575
@@ -244,5 +247,16 @@ bindsym $mod+d exec rofi -show run
 exec_always --no-startup-id "killall -q compton; compton --config ~/.config/i3/compton.conf"
 
 # Gaps
-gaps inner 6
-gaps outer 3
+gaps inner 4
+gaps outer 2
+
+# File manager
+bindsym $mod+m exec $terminal -x vifm
+bindsym $mod+shift+m exec nemo
+
+# Screenshots
+bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/screenshots'
+bindsym Control+Print exec gnome-screenshot -i
+
+# Numlock
+exec_always --no-startup-id numlockx on
