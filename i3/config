@@ -42,24 +42,12 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -76,7 +64,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -152,6 +140,7 @@ assign [class="Firefox"] $workspace9
 assign [class="Code"] $workspace3
 assign [class="Mailspring"] $workspace4
 assign [class="Slack"] $workspace4
+assign [class="Spotify"] $workspace10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -241,6 +230,8 @@ exec_always feh --randomize --bg-scale /home/valentin/Pictures/wallpapers
 
 # Rofi // dmenu
 bindsym $mod+d exec rofi -show run
+bindsym $mod+w exec rofi -show window
+bindsym $mod+c exec rofi -show config -modi config:~/.config/rofi/scripts/edit_config_files.sh
 # bindsym $mod+d exec dmenu_run
 
 # Compton + fading
