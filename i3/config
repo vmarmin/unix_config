@@ -230,7 +230,7 @@ exec_always feh --randomize --bg-scale /home/valentin/Pictures/wallpapers
 
 # Rofi // dmenu
 bindsym $mod+d exec rofi -show run
-bindsym $mod+w exec rofi -show window
+bindsym $mod+w exec rofi -show window -show-icons
 bindsym $mod+c exec rofi -show config -modi config:~/.config/rofi/scripts/edit_config_files.sh
 # bindsym $mod+d exec dmenu_run
 
