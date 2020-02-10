@@ -5,6 +5,7 @@ then
 function config_files()
 {
     # i3-msg -t get_workspaces | tr ',' '\n' | grep "name" | sed 's/"name":"\(.*\)"/\1/g' | sort -n
+    echo "alacritty: /home/valentin/Documents/externals/unix_config/alacritty/alacritty.yml"
     echo "compton: /home/valentin/Documents/externals/unix_config/i3/compton.conf"
     echo "i3: /home/valentin/Documents/externals/unix_config/i3/config"
     echo "i3-blocks: /home/valentin/Documents/externals/unix_config/i3/i3blocks.conf"
