@@ -18,7 +18,7 @@ export PYTHONSTARTUP=~/.pythonrc
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 source ~/.fonts/*.sh
-ZSH_THEME='oxide'
+ZSH_THEME='avit-custom'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
