@@ -132,6 +132,9 @@ ydl () {
 
 eval $(thefuck --alias)
 
+# Z script
+. ~/Documents/externals/z/z.sh
+
 fortune -s
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
