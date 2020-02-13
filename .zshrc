@@ -135,6 +135,8 @@ eval $(thefuck --alias)
 # Z script
 . ~/Documents/externals/z/z.sh
 
+screenfetch
+echo ""
 fortune -s
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
