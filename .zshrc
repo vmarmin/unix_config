@@ -10,14 +10,33 @@ export PATH=$PATH:/home/valentin/go/bin
 export PYTHONSTARTUP=~/.pythonrc
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/valentin/.oh-my-zsh"
+if [ "$(uname 2> /dev/null)" = "Darwin" ]; then
+    export ZSH="/Users/valentin/.oh-my-zsh"
+    source $(brew --prefix)/etc/profile.d/z.sh
+    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    plugins=(
+        git
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+    )
+elif [ "$(uname 2> /dev/null)" = "Linux" ]; then
+    export ZSH="/home/valentin/.oh-my-zsh"
+    plugins=(
+        git
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+        k
+    )
+    # Z script
+    . ~/Documents/externals/z/z.sh
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="powerlevel9k/powerlevel9k"
-source ~/.fonts/*.sh
+# source ~/.fonts/*.sh
 ZSH_THEME='avit-custom'
 
 # Set list of themes to pick from when loading at random
@@ -72,12 +91,6 @@ ZSH_THEME='avit-custom'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    k
-)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,7 +123,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l='ls -l'
-alias vi='nvim'
+alias vi='vim'
 alias tcpdump='sudo tcpdump'
 alias lrt='ls -lrt'
 alias ge='gedit'
@@ -132,8 +145,6 @@ ydl () {
 
 eval $(thefuck --alias)
 
-# Z script
-. ~/Documents/externals/z/z.sh
 
 screenfetch
 echo ""
