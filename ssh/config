@@ -5,6 +5,13 @@ Host gaia
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
+Host work-linux
+    HostName 10.10.1.139
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
 Host blade
     HostName 10.10.0.80
     ForwardX11 yes
@@ -83,7 +90,7 @@ Host rabih-stackman
     UserKnownHostsFile /dev/null
 
 Host dev-stackman
-    HostName stackman
+    HostName 10.12.0.2
     ForwardX11 yes
     User valentin
     StrictHostKeyChecking no
