@@ -149,9 +149,6 @@ say () {
 
 eval $(thefuck --alias)
 
-
-screenfetch
-echo ""
 fortune -s
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
