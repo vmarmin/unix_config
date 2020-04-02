@@ -138,6 +138,7 @@ alias ssh-config='vi ~/.ssh/config'
 alias github='/opt/GitHub\ Desktop/github-desktop'
 alias randwp="feh --bg-fill --randomize /home/valentin/Pictures/wallpapers"
 alias i3config='vi ~/.config/i3/config'
+alias sv='source venv/bin/activate'
 
 ydl () {
     youtube-dl --extract-audio --no-playlist --audio-format mp3 $1
@@ -150,5 +151,7 @@ say () {
 eval $(thefuck --alias)
 
 fortune -s
+
+neofetch
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

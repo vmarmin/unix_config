@@ -1,6 +1,6 @@
 Host gaia
     HostName 10.10.0.111
-    ForwardX11 yes
+    ForwardX11 no
     User vmarmin
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
