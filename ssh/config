@@ -12,63 +12,115 @@ Host work-linux
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host blade
+Host dev-esxi
     HostName 10.10.0.80
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host test-blade
+Host test-esxi
     HostName 10.12.0.13
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host test1-blade
+Host test1-esxi
     HostName 10.12.0.17
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host test2-blade
+Host test2-esxi
     HostName 10.12.0.19
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host test3-blade
+Host test3-esxi
     HostName 10.12.0.21
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host rabih-blade
+Host ths1-stackman
+    HostName 10.12.0.32
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host ths1-esxi
+    HostName 10.12.0.33
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host ths4-stackman
+    HostName 10.12.0.26
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host ths4-esxi
+    HostName 10.12.0.27
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host ths2-stackman
+    HostName 10.12.0.28
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host ths2-esxi
+    HostName 10.12.0.29
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host ths3-stackman
+    HostName 10.12.0.30
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host ths3-esxi
+    HostName 10.12.0.31
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host rabih-esxi
     HostName 10.12.0.9
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host hs1-blade
+Host hs1-esxi
     HostName 10.12.0.170
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host hs2-blade
+Host hs2-esxi
     HostName 10.12.0.7
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
-Host hs3-blade
+Host hs3-esxi
     HostName 10.12.0.15
     ForwardX11 yes
     User root
