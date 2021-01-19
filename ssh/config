@@ -47,6 +47,19 @@ Host test3-esxi
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
+Host atf-stackman
+    HostName 10.12.0.24
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host atf-esxi
+    HostName 10.12.0.25
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
 Host ths1-stackman
     HostName 10.12.0.32
     ForwardX11 yes
@@ -55,19 +68,6 @@ Host ths1-stackman
     UserKnownHostsFile /dev/null
 Host ths1-esxi
     HostName 10.12.0.33
-    ForwardX11 yes
-    User root
-    StrictHostKeyChecking no
-    UserKnownHostsFile /dev/null
-
-Host ths4-stackman
-    HostName 10.12.0.26
-    ForwardX11 yes
-    User valentin
-    StrictHostKeyChecking no
-    UserKnownHostsFile /dev/null
-Host ths4-esxi
-    HostName 10.12.0.27
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
@@ -94,6 +94,19 @@ Host ths3-stackman
     UserKnownHostsFile /dev/null
 Host ths3-esxi
     HostName 10.12.0.31
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host ths4-stackman
+    HostName 10.12.0.26
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host ths4-esxi
+    HostName 10.12.0.27
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
@@ -208,6 +221,13 @@ Host freebsd-val
     HostName 10.10.1.151
     ForwardX11 yes
     User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host console-server-1
+    HostName 10.11.0.31
+    ForwardX11 no
+    User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 
