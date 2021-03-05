@@ -18,6 +18,7 @@ Host dev-esxi
     User root
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
+    IdentityFile ~/.ssh/stackman
 
 Host test-esxi
     HostName 10.12.0.13
@@ -42,6 +43,20 @@ Host test2-esxi
 
 Host test3-esxi
     HostName 10.12.0.21
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test4-esxi
+    HostName 10.12.0.39
+    ForwardX11 yes
+    User root
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test5-esxi
+    HostName 10.12.0.41
     ForwardX11 yes
     User root
     StrictHostKeyChecking no
@@ -191,6 +206,20 @@ Host test2-stackman
 
 Host test3-stackman
     HostName 10.12.0.20
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test4-stackman
+    HostName 10.12.0.38
+    ForwardX11 yes
+    User valentin
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host test5-stackman
+    HostName 10.12.0.40
     ForwardX11 yes
     User valentin
     StrictHostKeyChecking no
